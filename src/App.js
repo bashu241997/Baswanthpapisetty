@@ -109,11 +109,10 @@ function App() {
           <p className="text-sm">&#169; Baswanth Papisetty</p>
         </div>
       </div>
-      <div className="container overflow-x-hidden overflow-y-auto background  h-full">
+      <div className="container overflow-x-hidden overflow-y-auto background fixed top-16 sm:top-0 sm:relative h-full">
         <div className="h-full">
           <HomeComponent />
           <Aboutme />
-          <hr className="p-2" />
           <ExperinceTab />
           <Skillscomponent />
           <Projects />

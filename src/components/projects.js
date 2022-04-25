@@ -69,7 +69,7 @@ const Datatodisplay = data.map(e=>{
       id="project"
       className="px-4 py-10 sm:p-8 capitalize text-slate-300 min-h-full"
     >
-      <div className="py-6 text-6xl font-bold">Projects</div>
+      <div className="sm:py-6 text-6xl font-bold">Projects</div>
       <Slider className="Slider" {...settings}>
        {Datatodisplay}
       </Slider>
