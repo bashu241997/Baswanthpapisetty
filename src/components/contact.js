@@ -12,7 +12,7 @@ export default function Contactcomp() {
         id="contact"
         className="bg-slate-100 text-gray-500	 min-h-full capitalize"
       >
-        <div className="py-8 px-8 text-4xl font-bold">Contact Me</div>
+        <div className="py-6 px-8 text-4xl font-bold">Contact Me</div>
         <div className="sm:pl-12 sm:m-8 shadow-2xl sm:flex sm:justify-between">
           <div className="w-full p-6">
             <div className="py-6 font-serif font-semibold text-xl">
@@ -100,8 +100,9 @@ export default function Contactcomp() {
             </div>
           </div>
         </div>
+        <div className="h-28 sm:h-14 pt-4 text-center block capitalize text-white bg-sky-700 font-semibold"> All rights © baswanth {new Date().getFullYear()}</div>
+  
       </div>
-    <div className="h-14 capitalize flex items-center justify-center text-white bg-sky-700 font-semibold"> All rights © baswanth {new Date().getFullYear()}</div>
     </>
   );
 }
