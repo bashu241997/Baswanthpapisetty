@@ -15,7 +15,7 @@ export default function Aboutme() {
   }, []);
   return (<div  id="about" className="sm:p-12 p-8 bg-slate-100 h-auto min-h-full top-16 sm:top-0 capitalize ">
     <div
-     className="grid sm:grid-cols-2"
+     className="grid lg:grid-cols-2"
     >
       <div className=" flex items-center flex-col justify-center ">
         <div className="appslider p-4 sm:p-6">

@@ -24,7 +24,7 @@ export default function ExperinceTab() {
   return (
     <div id="experince" className="p-4 sm:p-8 text-slate-300 min-h-full h-auto">
       <div className="sm:py-6 text-6xl font-bold">Experince</div>
-    <div className="grid py-6 font-mono capitalize gap-6 sm:grid-cols-2 ">
+    <div className="grid py-6 font-mono capitalize gap-6 lg:grid-cols-2 ">
         {expdisplay}
     </div>
     <a href="#skills" onClick={(e)=>anchor(e,"skills")} className="flex justify-center py-6"><Downarrow /> </a>

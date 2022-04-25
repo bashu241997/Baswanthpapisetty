@@ -13,7 +13,7 @@ export default function Contactcomp() {
         className="bg-slate-100 text-gray-500	 min-h-full capitalize"
       >
         <div className="py-6 px-8 text-4xl font-bold">Contact Me</div>
-        <div className="sm:pl-12 sm:m-8 shadow-2xl sm:flex sm:justify-between">
+        <div className="lg:pl-12 sm:m-8 shadow-2xl lg:flex lg:justify-between">
           <div className="w-full p-6">
             <div className="py-6 font-serif font-semibold text-xl">
               send me a message
@@ -57,7 +57,7 @@ export default function Contactcomp() {
               </div>
             </div>
           </div>
-          <div className="sm:w-72 p-6 py-8 bg-sky-700 text-white">
+          <div className="lg:w-full  p-6 py-8 bg-sky-700 text-white">
             <div className="py-6 text-md flex items-center ">
               <Mailsend />
               <a className="pl-4" href="mailto:p.baswanth@outlook.com">
