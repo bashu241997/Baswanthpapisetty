@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="sm:flex overflow-hidden sm:grow absolute w-full  sm:h-full">
       <div
-        className="w-full sm:w-60 sm:h-full fixed sm:relative z-30 text-white flex flex-col grow"
+        className="w-full sm:w-60 h-16 sm:h-full fixed sm:relative z-30 text-white flex flex-col grow"
         id="sidenavSecExample"
       >
         <div className="bg-sky-700 z-50 py-3 sm:pt-6 sm:pb-8 px-6">
@@ -109,6 +109,8 @@ function App() {
           <p className="text-sm">&#169; Baswanth Papisetty</p>
         </div>
       </div>
+
+
       <div className="container overflow-x-hidden overflow-y-auto background fixed top-16 sm:top-0 sm:relative h-full">
         <div className="h-full">
           <HomeComponent />
