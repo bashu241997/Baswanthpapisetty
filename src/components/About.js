@@ -49,7 +49,7 @@ export default function Aboutme() {
           throughout the development cycle of an application having knowledge in
           project management platforms like jira gitlab and microsoft azure tfs.
         </p>
-        <a href="https://drive.google.com/file/d/1EfENIM0c4G2koKg_nJtFqANMe4QC35D8/view?usp=sharing" className="p-3 appslider text-sm cursor-pointer text-white rounded-full flex bg-sky-700 w-1/2 m-2 justify-center">
+        <a href="https://drive.google.com/file/d/1e0MZCFXicPyXhOG_8w0UXKQP94Pgo0tj/view?usp=sharing" className="p-3 appslider text-sm cursor-pointer text-white rounded-full flex bg-sky-700 w-1/2 m-2 justify-center">
           resume &nbsp;
           <Download />
         </a>

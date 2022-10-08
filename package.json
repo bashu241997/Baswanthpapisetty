@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build & firebase deploy --only hosting:papisettybaswanth",
+    "build": "react-scripts build & firebase deploy --only hosting:bashu-53054",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

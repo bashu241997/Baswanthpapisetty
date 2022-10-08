@@ -39,7 +39,7 @@ function App() {
           <div className="flex items-center sm:flex-col">
             <div className="shrink-0">
               <img
-                src={require("./assets/images/avatar.jpg")}
+                src={require("./assets/images/profile.jpg")}
                 className="rounded-full w-10 sm:w-24"
                 alt="Avatar"
               />
