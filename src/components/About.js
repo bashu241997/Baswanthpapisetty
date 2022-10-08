@@ -18,8 +18,8 @@ export default function Aboutme() {
      className="grid lg:grid-cols-2"
     >
       <div className=" flex items-center flex-col justify-center ">
-        <div className="appslider p-4 sm:p-6">
-          <div className="overflow-hidden aboutimg">
+        <div className="appslider w-[300px]">
+          <div className="overflow-hidden w-[290px]">
             <img
               src={require("../assets/images/profile.jpg")}
               className="w-full h-full"
