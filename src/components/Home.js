@@ -24,7 +24,7 @@ export default function HomeComponent() {
               <a href="https://wa.me/917871387268" className="px-2 scale-90 cursor-pointer hover:scale-110 duration-300">
                 <img src={Whatsapp} className="w-8" />
               </a>
-              <a href="https://www.linkedin.com/in/baswanth-papisetty-91340b9a/?originalSubdomain=in" className="px-2 scale-90 cursor-pointer hover:scale-110 duration-300">
+              <a href="https://www.linkedin.com/in/baswanth-papisetty-91340b9a" className="px-2 scale-90 cursor-pointer hover:scale-110 duration-300">
                 <img src={Linkedin} className="w-8" />
               </a>
               <a href="https://github.com/bashu241997" className="px-2 scale-90 hover:scale-110 cursor-pointer duration-300">
@@ -38,7 +38,7 @@ export default function HomeComponent() {
       <div className="flex sm:items-start items-center py-12 sm:py-2 flex-col justify-center">
         <div className="overflow-hidden  homeimg">
           <img
-            src={require("../assets/images/profile.png")}
+            src={require("../assets/images/profile.jpg")}
             className=" rounded-full photoslider w-full h-full"
             alt="profile"
           />

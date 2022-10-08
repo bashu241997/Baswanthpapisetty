@@ -21,7 +21,7 @@ export default function Aboutme() {
         <div className="appslider p-4 sm:p-6">
           <div className="overflow-hidden aboutimg">
             <img
-              src={require("../assets/images/about.png")}
+              src={require("../assets/images/profile.jpg")}
               className="w-full h-full"
               alt="profile"
             />
