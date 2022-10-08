@@ -14,7 +14,7 @@ export default function ExperinceTab() {
     description:"web and mobile application developer,builds and develop web application according to wireframe provided using React-js and angular for web applicaton and React-native for mobile application "
   }];
   const expdisplay = experince.map(e=>{
-    return <div key={e.name} className="sm:p-6 p-4 rounded-xl shadow-xl">
+    return <div key={e.name} className="scale-[0.8] hover:scale-100 duration-300 sm:p-6 p-4 rounded-xl shadow-xl">
       <div className="py-4 text-3xl font-semibold flex items-center"><Experince /> <span className="pl-2">{e.name}</span></div>
       <div className="pb-3 text-xl font-medium flex items-center"><Duration /> <span className="pl-2">{e.duration}</span></div>
       <div className="py-4 pl-4 text-2xl ">{e.role}</div>

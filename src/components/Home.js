@@ -14,11 +14,11 @@ export default function HomeComponent() {
     >
       <div className="flex justify-center sm:pl-12 pl-2 flex-col">
         <h6 className="text-3xl py-2 font-500">Hi iam </h6>
-        <h2 className="text-5xl py-3 font-bold">Baswanth papisetty</h2>
+        <h2 className="text-5xl py-3 font-extrabold "><span className="text-sky-600">Baswanth</span> P</h2>
         <h6 className="text-lg pt-4 ">
-          Web and Hybrid application developer Looking for opportunities as a
+          Web and Hybrid application developer Over 4 years of Experince and Expertise in React Js , React Native & angular 
         </h6>
-        <h4 className="text-lg pt-3 font-bold">Web applicaion developer</h4>
+        {/* <h4 className="text-lg pt-3 font-bold">Web applicaion developer</h4> */}
         <a onClick={(e)=>anchor(e,"experince")} className="cursor-pointer py-2 px-12 rounded-full  mr-3 w-fit bg-sky-600 my-6 text-white">explore work</a>
         <div className="flex">
               <a href="https://wa.me/917871387268" className="px-2 scale-90 cursor-pointer hover:scale-110 duration-300">

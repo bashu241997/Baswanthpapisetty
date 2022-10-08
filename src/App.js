@@ -51,7 +51,7 @@ function App() {
     <ThemeProvider>
       <>
         <div
-          className={`sm:flex overflow-hidden sm:grow absolute w-full sm:h-full ${
+          className={`sm:flex text-[#333] overflow-hidden sm:grow absolute w-full sm:h-full ${
             Showsetting ? "brightness-60" : ""
           } ${toggle ? "nonbg" : "background"}`}
         >

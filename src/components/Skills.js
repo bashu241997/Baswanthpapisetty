@@ -4,25 +4,25 @@ import Chart from "react-apexcharts";
 export default function Skillscomponent() {
   return (
     <div id="skills" className="p-8   capitalize">
-      <div className="p-4 sm:p-6 text-4xl font-bold">skills</div>
+      <div className="p-4 sm:p-6 text-sky-600 text-4xl font-bold">skills</div>
 
       <div className=" py-0 sm:py-8 grid lg:grid-cols-3">
         <div className="shadow-xl my-3 sm:m-3 py-6 flex items-center flex-col justify-center">
         <h6 className="p-4 font-bold text-cyan-700">web development</h6>
           <p className="p-4 text-sm">i strive to develop an web application that improvive quality and hassle free user experince with the cutting edge technologies and framesworks</p>
-          <Languages />
+          <div className="scale-[0.9] hover:scale-110 duration-300"><Languages /></div>
         </div>
         <div className="shadow-xl my-3 sm:m-3 py-6 flex items-center flex-col justify-center">
         <h6 className="p-4 font-bold text-lime-700">Project manageent tools</h6>
         <p className="p-4 text-s">Use Programing tools and services to track and log the work in order to search and analyse effort spent</p>
          
-          <Programing />
+          <div className="scale-[0.9] hover:scale-110 duration-300"><Programing /></div>
         </div>
         <div className="shadow-xl my-3 sm:m-3 py-6 flex justify-center  flex-col items-center">
         <h6 className="p-4 font-bold text-yellow-600">Programing Languages</h6>
         <p className="p-4 text-sm">have knowledge in following Programing Languages that improvise and helps to improve the software development and problem solving skills</p>
         
-          <Tools />
+        <div className="scale-[0.9] hover:scale-110 duration-300"> <Tools /></div>
         </div>
       </div>
     </div>

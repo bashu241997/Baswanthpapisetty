@@ -12,7 +12,7 @@ export default function Projects() {
   let settings = {
     dots: true,
     infinite: true,
-    speed: 400,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -44,18 +44,18 @@ export default function Projects() {
     },
   ];
 
-const Datatodisplay = data.map(e=>{
-  return  <div className="p-6  grider sm:grid-cols-2">
-  <div className="p-6">
+const Datatodisplay = data.map((e,i)=>{
+  return  <div key={i} className="p-6 md:min-h-[460px] grider sm:grid-cols-2">
+  <div className="p-6 md:min-h-[350px] shadow-xl">
     <div className="pt-4 pb-2 text-4xl font-semibold">{e.name}</div>
     <div className="py-2 text-md">
       {e.Description}
     </div>
     <div className="py-2 text-md">{e.tech}</div>
-    <ul className="px-4 text-sm">
-      {e.technologies.map((_e ,i)=><li className="pb-2" key={i}>{_e}</li>)}
-    </ul>
-    <button className="py-2  px-10   rounded-full" onClick={()=>{window.location.href = e.link}}>Click here</button>
+    <ol className="px-4 text-sm">
+      {e.technologies.map((_e ,i)=><li className="list-disc pb-2" key={i}>{_e}</li>)}
+    </ol>
+    <button className="py-2  px-10 bg-sky-600 text-white capitalize rounded-lg" onClick={()=>{window.location.href = e.link}}>Click here</button>
   </div>
 
   <div className="p-6 flex grow justify-center items-center">
@@ -69,7 +69,7 @@ const Datatodisplay = data.map(e=>{
       id="project"
       className="px-4 py-10 sm:p-8 capitalize  min-h-full"
     >
-      <div className="sm:py-6 text-6xl font-bold">Projects</div>
+      <div className="sm:py-6 text-sky-600 text-5xl font-bold">Projects</div>
       <Slider className="Slider" {...settings}>
        {Datatodisplay}
       </Slider>

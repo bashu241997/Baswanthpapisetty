@@ -17,7 +17,7 @@ export default function Aboutme() {
      className="grid lg:grid-cols-2"
     >
       <div className=" flex items-center flex-col justify-center ">
-        <div className="shadow-xl w-[300px]">
+        <div className="scale-100 md:hover:scale-[1.3] duration-300 shadow-xl w-[300px]">
           <div className="overflow-hidden w-[290px]">
             <img
               src={require("../assets/images/profile.jpg")}
@@ -39,7 +39,7 @@ export default function Aboutme() {
         <h3 className="text-center text-4xl py-10 font-semibold flex items-center">
           <span className="pr-2 text-sky-500">about</span> Me
         </h3>
-        <h6 className="text-2xl text-left font-semibold ">Hi I am baswanth </h6>
+        <h6 className="text-2xl text-left font-semibold ">Hi I am  <span className="pr-2 text-sky-500"> baswanth </span> </h6>
         <p className="text-base text-justify py-4">
           Ui/Ux Designer Loves To Design Creatively I'm Software Developer With{" "}
           {exp} Years Of Experince Specalizing In Web & Hybrid Application
@@ -48,7 +48,7 @@ export default function Aboutme() {
           throughout the development cycle of an application having knowledge in
           project management platforms like jira gitlab and microsoft azure tfs.
         </p>
-        <a href="https://drive.google.com/file/d/1e0MZCFXicPyXhOG_8w0UXKQP94Pgo0tj/view?usp=sharing" className="p-3 shadow-xl text-sm cursor-pointer  rounded-full flex  w-1/2 m-2 justify-center">
+        <a href="https://drive.google.com/file/d/1e0MZCFXicPyXhOG_8w0UXKQP94Pgo0tj/view?usp=sharing" className="scale-100 hover:scale-[1.2] duration-300 p-3 shadow-xl bg-sky-500 text-white text-sm cursor-pointer  rounded-full flex  w-1/2 m-2 justify-center">
           resume &nbsp;
           <Download />
         </a>

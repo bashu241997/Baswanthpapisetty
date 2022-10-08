@@ -12,7 +12,7 @@ export default function Contactcomp() {
         id="contact"
         className="min-h-full capitalize"
       >
-        <div className="py-6 px-8 text-4xl font-bold">Contact Me</div>
+        <div className="py-6 px-8 text-4xl text-sky-600 font-bold">Contact Me</div>
         <div className="lg:pl-12 sm:m-8 shadow-lg lg:flex lg:justify-between">
           <div className="w-full p-6">
             <div className="py-6 font-serif font-semibold text-xl">
@@ -50,7 +50,7 @@ export default function Contactcomp() {
                     className="px-4 w-full bg-transparent py-2 outline-none shadow-xl  border border-sky-500 border-l-0 border-t-0 border-r-0 border-b-2  h-16"
                   />
                 </div>
-                <div onClick={()=>alert("we are working on sending your response Thank you")} className="flex scale-90 hover:scale-100 duration-300  shadow-xl cursor-pointer items-center m-4 justify-center w-56   rounded-full py-2 px-4">
+                <div onClick={()=>alert("we are working on sending your response Thank you")} className="flex bg-sky-600 scale-90 hover:scale-100 duration-300 text-white shadow-xl cursor-pointer items-center m-4 justify-center w-56   rounded-full py-2 px-4">
                   <span className="text-lg font-semibold px-2">send</span>
                   <img className="w-6" src={sent} />
                 </div>
