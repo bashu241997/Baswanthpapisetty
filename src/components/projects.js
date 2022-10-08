@@ -45,7 +45,7 @@ export default function Projects() {
   ];
 
 const Datatodisplay = data.map(e=>{
-  return  <div className="p-6 imageslider grider sm:grid-cols-2">
+  return  <div className="p-6  grider sm:grid-cols-2">
   <div className="p-6">
     <div className="pt-4 pb-2 text-4xl font-semibold">{e.name}</div>
     <div className="py-2 text-md">
@@ -55,7 +55,7 @@ const Datatodisplay = data.map(e=>{
     <ul className="px-4 text-sm">
       {e.technologies.map((_e ,i)=><li className="pb-2" key={i}>{_e}</li>)}
     </ul>
-    <button className="py-2  px-10 bg-sky-700 text-slate-200 rounded-full" onClick={()=>{window.location.href = e.link}}>Click here</button>
+    <button className="py-2  px-10   rounded-full" onClick={()=>{window.location.href = e.link}}>Click here</button>
   </div>
 
   <div className="p-6 flex grow justify-center items-center">
@@ -67,7 +67,7 @@ const Datatodisplay = data.map(e=>{
   return (
     <div
       id="project"
-      className="px-4 py-10 sm:p-8 capitalize text-slate-300 min-h-full"
+      className="px-4 py-10 sm:p-8 capitalize  min-h-full"
     >
       <div className="sm:py-6 text-6xl font-bold">Projects</div>
       <Slider className="Slider" {...settings}>

@@ -10,10 +10,10 @@ export default function Contactcomp() {
     <>
       <div
         id="contact"
-        className="bg-slate-100 text-gray-500	 min-h-full capitalize"
+        className="min-h-full capitalize"
       >
         <div className="py-6 px-8 text-4xl font-bold">Contact Me</div>
-        <div className="lg:pl-12 sm:m-8 shadow-2xl lg:flex lg:justify-between">
+        <div className="lg:pl-12 sm:m-8 shadow-lg lg:flex lg:justify-between">
           <div className="w-full p-6">
             <div className="py-6 font-serif font-semibold text-xl">
               send me a message
@@ -24,21 +24,21 @@ export default function Contactcomp() {
                   <p className="font-semibold text-xl pb-4">first Name</p>
                   <input
                     placeholder="Enter your name"
-                    className="px-4 w-full bg-transparent py-2 outline-none shadow-2xl border border-sky-500 border-l-0 border-t-0 border-r-0 border-b-2 "
+                    className="px-4 w-full bg-transparent py-2 outline-none shadow-xl border border-sky-500 border-l-0 border-t-0 border-r-0 border-b-2 "
                   />
                 </div>
                 <div className="p-2 w-full">
                   <p className="font-semibold text-xl pb-4">Last Name</p>
                   <input
                     placeholder="Enter your name"
-                    className="px-4 w-full bg-transparent py-2 outline-none shadow-2xl border border-sky-500 border-l-0 border-t-0 border-r-0 border-b-2 "
+                    className="px-4 w-full bg-transparent py-2 outline-none shadow-xl border border-sky-500 border-l-0 border-t-0 border-r-0 border-b-2 "
                   />
                 </div>
                 <div className="p-2 sm:px-2 sm:pt-2 sm:pb-8 w-full">
                   <p className="font-semibold text-xl pb-4">email</p>
                   <input
                     placeholder="Enter your name"
-                    className="px-4 w-full bg-transparent py-2 outline-none shadow-2xl border border-sky-500 border-l-0 border-t-0 border-r-0 border-b-2 "
+                    className="px-4 w-full bg-transparent py-2 outline-none shadow-xl border border-sky-500 border-l-0 border-t-0 border-r-0 border-b-2 "
                   />
                 </div>
               </div>
@@ -47,17 +47,17 @@ export default function Contactcomp() {
                   <p className="font-semibold text-xl pb-4">Message</p>
                   <textarea
                     placeholder="Enter your message"
-                    className="px-4 w-full bg-transparent py-2 outline-none shadow-2xl  border border-sky-500 border-l-0 border-t-0 border-r-0 border-b-2  h-16"
+                    className="px-4 w-full bg-transparent py-2 outline-none shadow-xl  border border-sky-500 border-l-0 border-t-0 border-r-0 border-b-2  h-16"
                   />
                 </div>
-                <div onClick={()=>alert("we are working on sending your response Thank you")} className="flex scale-90 hover:scale-100 duration-300  shadow-2xl cursor-pointer items-center m-4 justify-center w-56 bg-sky-700 text-white rounded-full py-2 px-4">
+                <div onClick={()=>alert("we are working on sending your response Thank you")} className="flex scale-90 hover:scale-100 duration-300  shadow-xl cursor-pointer items-center m-4 justify-center w-56   rounded-full py-2 px-4">
                   <span className="text-lg font-semibold px-2">send</span>
                   <img className="w-6" src={sent} />
                 </div>
               </div>
             </div>
           </div>
-          <div className="lg:w-full  p-6 py-8 bg-sky-700 text-white">
+          <div className="lg:w-full  p-6 py-8  ">
             <div className="py-6 text-md flex items-center ">
               <Mailsend />
               <a className="pl-4" href="mailto:p.baswanth@outlook.com">
@@ -100,7 +100,7 @@ export default function Contactcomp() {
             </div>
           </div>
         </div>
-        <div className="h-28 sm:h-14 pt-4 text-center block capitalize text-white bg-sky-700 font-semibold"> All rights © baswanth {new Date().getFullYear()}</div>
+        <div className="h-28 sm:h-14 pt-4 text-center block capitalize   font-semibold"> All rights © baswanth {new Date().getFullYear()}</div>
   
       </div>
     </>

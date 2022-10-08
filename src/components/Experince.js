@@ -14,7 +14,7 @@ export default function ExperinceTab() {
     description:"web and mobile application developer,builds and develop web application according to wireframe provided using React-js and angular for web applicaton and React-native for mobile application "
   }];
   const expdisplay = experince.map(e=>{
-    return <div key={e.name} className="sm:p-6 p-4 rounded-xl imageslider">
+    return <div key={e.name} className="sm:p-6 p-4 rounded-xl shadow-xl">
       <div className="py-4 text-3xl font-semibold flex items-center"><Experince /> <span className="pl-2">{e.name}</span></div>
       <div className="pb-3 text-xl font-medium flex items-center"><Duration /> <span className="pl-2">{e.duration}</span></div>
       <div className="py-4 pl-4 text-2xl ">{e.role}</div>
@@ -22,7 +22,7 @@ export default function ExperinceTab() {
     </div>
   })
   return (
-    <div id="experince" className="p-4 sm:p-8 text-slate-300 min-h-full h-auto">
+    <div id="experince" className="p-4 sm:p-8  min-h-full h-auto">
       <div className="sm:py-6 text-6xl font-bold">Experince</div>
     <div className="grid py-6 font-mono capitalize gap-6 lg:grid-cols-2 ">
         {expdisplay}

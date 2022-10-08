@@ -3,7 +3,7 @@ const About = () => (
     xmlns="http://www.w3.org/2000/svg"
     className="h-5 w-5"
     viewBox="0 0 20 20"
-    fill="currentColor"
+    fill="#333333"
   >
     <path
       fillRule="evenodd"
@@ -18,7 +18,7 @@ const Home = () => (
     xmlns="http://www.w3.org/2000/svg"
     className="h-5 w-5"
     viewBox="0 0 20 20"
-    fill="currentColor"
+    fill="#333333"
   >
     <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
   </svg>
@@ -28,9 +28,9 @@ const Experince = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"
-    fill="none"
+    fill="#333"
     viewBox="0 0 24 24"
-    stroke="currentColor"
+    stroke="#333333"
     strokeWidth="2"
   >
     <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -48,7 +48,7 @@ const Skills = () => (
     className="h-6 w-6"
     fill="none"
     viewBox="0 0 24 24"
-    stroke="currentColor"
+    stroke="#333333"
     strokeWidth="2"
   >
     <path
@@ -63,7 +63,7 @@ const Project = () => (
     xmlns="http://www.w3.org/2000/svg"
     className="h-5 w-5"
     viewBox="0 0 20 20"
-    fill="currentColor"
+    fill="#333333"
   >
     <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
   </svg>
@@ -74,7 +74,7 @@ const Contact = () => (
     className="h-6 w-6"
     fill="none"
     viewBox="0 0 24 24"
-    stroke="currentColor"
+    stroke="#333333"
     strokeWidth="2"
   >
     <path
@@ -89,7 +89,7 @@ const Menu = () => (
     xmlns="http://www.w3.org/2000/svg"
     className="h-5 w-5"
     viewBox="0 0 20 20"
-    fill="currentColor"
+    fill="#333333"
   >
     <path
       fillRule="evenodd"
@@ -103,7 +103,7 @@ const Close = () => (
     xmlns="http://www.w3.org/2000/svg"
     className="h-5 w-5"
     viewBox="0 0 20 20"
-    fill="currentColor"
+    fill="#333333"
   >
     <path
       fillRule="evenodd"
@@ -118,7 +118,7 @@ const Download = () => (
     xmlns="http://www.w3.org/2000/svg"
     class="h-5 w-5"
     viewBox="0 0 20 20"
-    fill="currentColor"
+    fill="#333333"
   >
     <path
       fill-rule="evenodd"
@@ -128,11 +128,11 @@ const Download = () => (
   </svg>
 );
 
-const Mailsend =()=>(<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+const Mailsend =()=>(<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#333333">
 <path fill-rule="evenodd" d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z" clip-rule="evenodd" />
 </svg>)
 const Mobile = () =>(
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#333333">
   <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
 </svg>
 )
@@ -141,7 +141,7 @@ const Explore = () => (
     xmlns="http://www.w3.org/2000/svg"
     class="h-5 w-5"
     viewBox="0 0 20 20"
-    fill="currentColor"
+    fill="#333333"
   >
     <path d="M9 9a2 2 0 114 0 2 2 0 01-4 0z" />
     <path
@@ -152,14 +152,14 @@ const Explore = () => (
   </svg>
 );
 
-const Duration = () =>(<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+const Duration = () =>(<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#333333">
 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
 </svg>)
-const Downarrow = () =>(<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+const Downarrow = () =>(<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#333333" stroke-width="2">
 <path stroke-linecap="round" stroke-linejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
 </svg>)
 
-const Location =() =>(<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+const Location =() =>(<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#333333">
 <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
 </svg>)
 export {Location,Duration,Mailsend, Mobile,About, Downarrow,Home, Experince, Skills, Project, Contact, Menu, Close,Download,Explore };
