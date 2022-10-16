@@ -44,7 +44,7 @@ const Languages = () => {
       type: "polarArea",
     },
     legend: {
-      show: true,
+      show: false,
       formatter: (name, { seriesIndex }) => {
         return chartLabels[seriesIndex];
       },
@@ -129,7 +129,7 @@ const Programing = () => {
 
     labels: ["GIT", "Jira", "Azure", "TFS"],
     legend: {
-      show: true,
+      show: false,
       formatter: (name, { seriesIndex }) => {
         return _labels[seriesIndex];
       },
@@ -170,6 +170,7 @@ const Tools = () => {
     
     labels: ["Type Script", "Java Script", "java", "c++","python"],
     legend: {
+      show:false,
       position:"bottom",
       formatter: function (val, opts) {
         return val;

@@ -13,7 +13,7 @@ export default function Contactcomp() {
         className="min-h-full capitalize"
       >
         <div className="py-6 px-8 text-4xl text-sky-600 font-bold">Contact Me</div>
-        <div className="lg:pl-12 sm:m-8 shadow-lg lg:flex lg:justify-between">
+        <div className="lg:pl-12 sm:m-8 md:shadow-lg lg:flex lg:justify-between">
           <div className="w-full p-6">
             <div className="py-6 font-serif font-semibold text-xl">
               send me a message

@@ -12,6 +12,7 @@ export default function Aboutme() {
     let d = Math.abs(c / 365.25).toFixed(1);
     setExp(d);
   }, []);
+  const getfunc = () =>{return `https://drive.google.com/file/d/1ciX2bcZn_g1Vh1LzhEr9BisVgmXucOgS/view?usp=sharing`}
   return (<div  id="about" className="sm:p-12 p-8  h-auto min-h-full top-16 sm:top-0 capitalize ">
     <div
      className="grid lg:grid-cols-2"
@@ -48,7 +49,7 @@ export default function Aboutme() {
           throughout the development cycle of an application having knowledge in
           project management platforms like jira gitlab and microsoft azure tfs.
         </p>
-        <a href="https://drive.google.com/file/d/1e0MZCFXicPyXhOG_8w0UXKQP94Pgo0tj/view?usp=sharing" className="scale-100 hover:scale-[1.2] duration-300 p-3 shadow-xl bg-sky-500 text-white text-sm cursor-pointer  rounded-full flex  w-1/2 m-2 justify-center">
+        <a href="https://drive.google.com/file/d/1ciX2bcZn_g1Vh1LzhEr9BisVgmXucOgS/view?usp=sharing" className="scale-100 hover:scale-[1.2] duration-300 p-3 shadow-xl bg-sky-500 text-white text-sm cursor-pointer  rounded-full flex  w-1/2 m-2 justify-center">
           resume &nbsp;
           <Download />
         </a>

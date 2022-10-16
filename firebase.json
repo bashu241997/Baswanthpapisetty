@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "bashu-53054",
+    "site": "papisettybaswanth",
     "public": "build",
     "ignore": [
       "firebase.json",

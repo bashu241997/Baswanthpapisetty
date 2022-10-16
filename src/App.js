@@ -8,7 +8,7 @@ import {
   Project,
   Contact,
   Menu,
-  Close,
+  Close,Setting
 } from "./assets/icons";
 import "./app.css";
 import HomeComponent from "./components/Home";
@@ -21,16 +21,22 @@ import Settin from "./assets/images/setting.svg";
 import Toggle from "./toggle";
 
 
-const ThemeContext = React.createContext(false);
+const ThemeContext = React.createContext({
+  toggle:false,
+  toggleFunction: ()=>{}
+});
 
-const ThemeProvider = ({ children }) => {
+const ThemeProvider = (props) => {
   const [toggle, setToggle] = React.useState(false);
   const toggleFunction = () => {
-    setToggle(!toggle);
-  };
+    setToggle(!toggle)
+  }
   return (
-    <ThemeContext.Provider value={{ toggle, toggleFunction }}>
-      {children}
+    <ThemeContext.Provider value={{
+      toggle,
+      toggleFunction
+    }}>
+      {props.children}
     </ThemeContext.Provider>
   );
 };
@@ -46,20 +52,33 @@ function App() {
     element && element.scrollIntoView({ behavior: "smooth", block: "start" });
     setIsOpen(false);
   };
+  const handlemode = () =>{
+    toggleFunction()
+  }
+  const [Background, setBackground] = useState("#fff")
+  const [Color, setColor] = useState("#333")
 
+  useEffect(()=>{
+    if(toggle){
+      setBackground("#333")
+      setColor("#fff")
+    }else{
+      setBackground("#fff")
+      setColor("#333")
+    }
+  },[toggle])
   return (
     <ThemeProvider>
       <>
         <div
-          className={`sm:flex text-[#333] overflow-hidden sm:grow absolute w-full sm:h-full ${
-            Showsetting ? "brightness-60" : ""
-          } ${toggle ? "nonbg" : "background"}`}
+          className={`sm:flex text-[#333] overflow-hidden sm:grow absolute w-full sm:h-full ${toggle ? "nonbg" : "background"}`}
+          style={{backgroundColor:`${Background}`,color:`${Color}`}}
         >
           <div
             className="w-full shadow-lg sm:w-60 h-16 sm:h-full fixed sm:relative z-30  flex flex-col grow border-r-2"
             id="sidenavSecExample"
           >
-            <div className="bg-white z-50 py-3 sm:pt-6 sm:pb-8 px-6">
+            <div className={`${toggle ? "nonbg" : "background"} z-50 py-3 sm:pt-6 sm:pb-8 px-6`} style={{backgroundColor:`${Background}`,color:`${Color}`}}>
               <div className="flex items-center sm:flex-col">
                 <div className="shrink-0">
                   <img
@@ -87,11 +106,12 @@ function App() {
               </div>
             </div>
             <div
-              className={`bg-white ${
+              style={{backgroundColor:`${Background}`,color:`${Color}`}}
+              className={`${
                 isOpen
                   ? "translate-y-0 duration-300 sm:duration-0"
                   : "-translate-y-full sm:translate-y-0 duration-300 sm:duration-0 sm:block sm:translate-y-0"
-              }  `}
+              } ${toggle ? "nonbg" : "background"} `}
             >
               <ul className={`relative px-1 pb-4`}>
                 <li className="relative">
@@ -162,7 +182,7 @@ function App() {
             </div>
           </div>
 
-          <div className="container overflow-x-hidden overflow-y-auto background fixed top-16 sm:top-0 sm:relative h-full">
+          <div  style={{backgroundColor:`${Background}`,color:`${Color}`}} className="container overflow-x-hidden overflow-y-auto fixed top-16 sm:top-0 sm:relative h-full">
             <div className="h-full">
               <HomeComponent />
               <Aboutme />
@@ -174,42 +194,18 @@ function App() {
           </div>
         </div>
         <div
-          className={`absolute flex items-center  top-[30%] md:top-[40%] right-5 md:right-10 translate-y-[-50%]`}
+          className={`absolute flex items-center  top-[20%] md:top-[40%] right-6 md:right-10 translate-y-[-50%]`}
         >
           {Showsetting && (
             <div className="p-4 shadow-xl bg-slate-100 rounded-lg mr-2 text-left">
-              <Toggle change={toggleFunction} value={toggle} />
-              <div className="capitalize text-left px-2 flex justify-end">
-                background color :
-                <input
-                  type="color"
-                  id="favcolor"
-                  className="w-6 h-6 mx-2"
-                  name="favcolor"
-                  onChange={(e) => {
-                    console.log(e.target.value);
-                  }}
-                />
-              </div>
-              <div className="capitalize text-left px-2 flex justify-end">
-                Text color :
-                <input
-                  type="color"
-                  id="textcolor"
-                  className="w-6 h-6 mx-2"
-                  name="text-color"
-                  onChange={(e) => {
-                    console.log(e.target.value);
-                  }}
-                />
-              </div>
+              <Toggle toggler={handlemode} value={toggle} />
             </div>
           )}
           <div
             onClick={() => setShowsetting(!Showsetting)}
             className="cursor-pointer rounded-lg z-50 shadow-xl p-2 bg-slate-200"
           >
-            <img src={Settin} className="w-8" />
+            {Showsetting ? <Close className="w-8"/> : <Setting className="w-8"/>}
           </div>
         </div>
       </>
