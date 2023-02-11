@@ -1,10 +1,10 @@
 import React from "react";
 import "./home.css";
-import Whatsapp from "../assets/images/Whatsapp.svg";
-import Git from "../assets/images/Git.svg";
-import Linkedin from "../assets/images/Linkedin.svg";
-import Insta from "../assets/images/Insta.svg";
-import { anchor } from "../assets/class";
+import Whatsapp from "../../assets/images/Whatsapp.svg";
+import Git from "../../assets/images/Git.svg";
+import Linkedin from "../../assets/images/Linkedin.svg";
+import Insta from "../../assets/images/Insta.svg";
+import { anchor } from "../../assets/class";
 
 export default function HomeComponent() {
   return (
@@ -38,7 +38,7 @@ export default function HomeComponent() {
       <div className="flex sm:items-start items-center py-12 sm:py-2 flex-col justify-center">
         <div className="overflow-hidden  homeimg">
           <img
-            src={require("../assets/images/profile.jpg")}
+            src={require("../../assets/images/profile.jpg")}
             className=" rounded-full photoslider w-full h-full"
             alt="profile"
           />

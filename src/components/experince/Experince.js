@@ -1,6 +1,6 @@
 import React from "react";
-import { Downarrow,Experince,Duration } from "../assets/icons";
-import { anchor } from "../assets/class";
+import { Downarrow,Experince,Duration } from "../../assets/icons";
+import { anchor } from "../../assets/class";
 export default function ExperinceTab() {
   const experince = [{
     name:"Accenture",

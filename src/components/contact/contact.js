@@ -1,10 +1,10 @@
 import React from "react";
-import { Mobile, Mailsend, Location } from "../assets/icons";
-import Whatsapp from "../assets/images/Whatsapp.svg";
-import Git from "../assets/images/Git.svg";
-import Linkedin from "../assets/images/Linkedin.svg";
-import Insta from "../assets/images/Insta.svg";
-import sent from "../assets/images/send.svg";
+import { Mobile, Mailsend, Location } from "../../assets/icons";
+import Whatsapp from "../../assets/images/Whatsapp.svg";
+import Git from "../../assets/images/Git.svg";
+import Linkedin from "../../assets/images/Linkedin.svg";
+import Insta from "../../assets/images/Insta.svg";
+import sent from "../../assets/images/send.svg";
 export default function Contactcomp() {
   return (
     <>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Downarrow, Download } from "../assets/icons";
-import { anchor } from "../assets/class";
+import { Downarrow, Download } from "../../assets/icons";
+import { anchor } from "../../assets/class";
 
 export default function Aboutme() {
   const [exp, setExp] = useState("");
@@ -21,7 +21,7 @@ export default function Aboutme() {
         <div className="scale-100 md:hover:scale-[1.3] duration-300 shadow-xl w-[300px]">
           <div className="overflow-hidden w-[290px]">
             <img
-              src={require("../assets/images/profile.jpg")}
+              src={require("../../assets/images/profile.jpg")}
               className="w-full h-full"
               alt="profile"
             />

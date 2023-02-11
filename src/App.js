@@ -11,12 +11,12 @@ import {
   Close,Setting
 } from "./assets/icons";
 import "./app.css";
-import HomeComponent from "./components/Home";
-import Aboutme from "./components/About";
-import ExperinceTab from "./components/Experince";
-import Skillscomponent from "./components/Skills";
-import Projects from "./components/projects";
-import Contactcomp from "./components/contact";
+import HomeComponent from "./components/home/Home";
+import Aboutme from "./components/about/About";
+import ExperinceTab from "./components/experince/Experince";
+import Skillscomponent from "./components/skills/Skills";
+import Projects from "./components/project/projects";
+import Contactcomp from "./components/contact/contact";
 import Settin from "./assets/images/setting.svg";
 import Toggle from "./toggle";
 

@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./projects.css";
-import cloned from "../assets/images/cloned.jpg"
-import chat from "../assets/images/chat.png"
-import we from "../assets/images/we.png"
+import cloned from "../../assets/images/cloned.jpg"
+import chat from "../../assets/images/chat.png"
+import we from "../../assets/images/we.png"
 
 
 export default function Projects() {
