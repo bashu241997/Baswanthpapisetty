@@ -14,7 +14,7 @@ const Experience = () => {
           <Card head={'tata consultancy services'} univ={""} subhead={'systems engineer'} time={'november 2018 - july 2021'} right={true}/>
         </div>
         <div>
-          <img className="w-[300px] sm:max-w-[550px]" alt="about" src={experience} />
+          <img className="w-[300px] sm:w-[550px]" alt="about" src={experience} />
         </div>
       </div>
       </div>

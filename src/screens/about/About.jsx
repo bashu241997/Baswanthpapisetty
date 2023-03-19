@@ -10,9 +10,9 @@ const About = () => {
       <Heading heading={"who am i .."} />
       <div className="min-h-[85vh] text-primary flex flex-col sm:flex-row  items-center gap-4 justify-center ">
         <div>
-          <img className="w-[300px] sm:max-w-[650px]" alt="about" src={about} />
+          <img className="w-[300px] sm:w-[650px]" alt="about" src={about} />
         </div>
-        <div className="w-[300px] sm:max-w-[600px] flex flex-col text-left">
+        <div className="w-[300px] sm:w-[600px] flex flex-col text-left">
           <SubHeading heading={"I’m Baswanth Web application Developer"} />
           <p className="ubuntum text-2xl font-semibold text-justify py-4 pl-3 ">{content()}</p>
           <div className="pt-4">
