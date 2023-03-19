@@ -19,7 +19,7 @@ html {
     font-family: 'Roboto';
 }
 .robotom{
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto Mono' !important;
 }
 .Staatliches {
     font-family: 'Staatliches';

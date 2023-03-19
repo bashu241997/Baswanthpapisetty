@@ -9,12 +9,12 @@ export const Heading = ({heading,dark}) => {
 
 export const SubHeading = ({heading}) => {
     return (
-      <div className='text-primary w-full font-bold text-left text-4xl robotom py-3'>{heading}</div>
+      <div className='text-primary w-full capitalize ubuntum font-bold text-left text-4xl robotom py-3'>{heading}</div>
     )
   }
   
   export const ShortHeading = ({heading}) => {
     return (
-      <div className='text-primary px-[25px] w-full font-bold text-justify text-base sm:text-2xl robotom py-[50px]'>{heading}</div>
+      <div className='text-primary px-[25px] w-full capitalize font-bold text-justify text-base sm:text-2xl robotom py-[50px]'>{heading}</div>
     )
   }
