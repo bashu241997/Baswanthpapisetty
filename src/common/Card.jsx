@@ -3,7 +3,7 @@ import Icon from "../assets/Group.svg";
 
 const Card = ({ head, subhead, time,univ, right = false }) => {
   return (
-    <div className="flex w-[300px] sm:min-w-[600px] justify-between rounded-lg overflow-hidden shadow-2xl my-5">
+    <div className=" scale-100 hover:scale-110 duration-300 flex w-[300px] sm:min-w-[600px] justify-between rounded-lg overflow-hidden shadow-2xl my-5">
       {!right && (
         <div className="flex items-center justify-center p-[15px] sm:p-[30px] mr-[10px] gradienticon">
           <img src={Icon} alt="icon" />

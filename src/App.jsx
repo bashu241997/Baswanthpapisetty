@@ -4,6 +4,7 @@ import About from "./screens/about/About"
 import Experience from "./screens/experience/Experience";
 import Education from "./screens/education/Education";
 import Contact from "./screens/contact/Contact";
+import Project from "./screens/projects/Project";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <About />
        <Experience />
        <Education />
+       <Project />
       </div>
       <Contact />
     </div>
