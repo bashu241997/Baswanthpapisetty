@@ -36,7 +36,8 @@ const Skills = () => {
   return (
     <div id="about" className="py-[60px] sm:py-[40px]">
       <Heading heading={"Personal projects"} />
-      <SubHeading heading={"programing languages And Scripting "} />
+    <div className="pt-[40px]">
+    <SubHeading heading={"programing languages And Scripting "} />
       <div className="flex py-[30px]  overflow-x-auto">
         {por.map((e, i) => {
           return (
@@ -66,6 +67,7 @@ const Skills = () => {
           );
         })}
       </div>
+    </div>
     </div>
   );
 };
