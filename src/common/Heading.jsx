@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const Heading = ({heading}) => {
+export const Heading = ({heading,dark}) => {
   return (
-    <div className='text-primary text-5xl text-center font-bold pacifo pt-[40px] pb-[10px]'>{heading}</div>
+    <div className={`${dark?"text-white":"text-primary"} text-5xl text-center font-bold pacifo pt-[40px] pb-[40px] sm:pb-[10px]`}>{heading}</div>
 
   )
 }

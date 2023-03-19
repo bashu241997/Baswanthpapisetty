@@ -8,8 +8,8 @@ import Line from '../../common/Line'
 const Home = () => {
   return (<>
     <div id='title' className='text-4xl pl-6 text-primary font-extrabold capitalize pacifo pt-[40px]'>baswanth</div>
-    <div id='home' className='py-8 flex min-h-[95vh] text-primary justify-center items-center gap-4'>
-      <div  id='home-leftcontainer'>
+    <div id='home' className='py-8 flex flex-col sm:flex-row min-h-[95vh] text-primary justify-center items-center gap-4'>
+      <div  id='home-leftcontainer' className='pl-6 sm:pl-0'> 
         <div className='ubuntum text-2xl uppercase font-bold'>welcome i'm</div>
         <div className='Staatliches text-6xl capitalize font-bold pt-4 pb-6'>baswanth papisetty</div>
         <div className='ubuntum text-2xl capitalize font-bold'>web and mobile application developer</div>
@@ -25,7 +25,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id='home-image'><img src={Profile} className="min-w-[650px] h-[350px]" alt="profile_image" /></div>
+      <div id='home-image'><img src={Profile} className=" w-[300px] sm:min-w-[650px] sm:h-[350px]" alt="profile_image" /></div>
     </div>
     
     <Line /></>
