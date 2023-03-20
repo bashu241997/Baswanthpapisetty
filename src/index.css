@@ -36,3 +36,6 @@ html {
 .gradienticon{
     background:linear-gradient(134.85deg, #BCD1FF 1.75%, #9CBBFF 100%), #BCD1FF
 }
+#skills::-webkit-scrollbar {
+    display: none;
+  }

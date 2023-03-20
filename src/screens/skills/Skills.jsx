@@ -23,22 +23,19 @@ const Skills = () => {
     { title: "JS", icon: Java },
     { title: "TS", icon: javas },
     { title: "TS", icon: typescrip },
-    { title: "Scss", icon: scss },
+    { title: "Scss", icon: scss }, { title: "React", icon: react },
+    { title: "Angular", icon: angular },
+    { title: "Node", icon: node },
+    { title: "Mongo db", icon: mongo },
+    { title: "Ionic", icon: Ionic },{ title: "Github", icon: github },
+    { title: "bit bucket", icon: bitbucket },
+    { title: "Vs code", icon: vscode }
   ];
-  const frame = [ { title: "React", icon: react },
-  { title: "Angular", icon: angular },
-  { title: "Node", icon: node },
-  { title: "Mongo db", icon: mongo },
-  { title: "Ionic", icon: Ionic },];
-  const pro = [{ title: "Github", icon: github },
-  { title: "bit bucket", icon: bitbucket },
-  { title: "Vs code", icon: vscode }];
   return (
-    <div id="about" className="py-[60px] sm:py-[40px]">
-      <Heading heading={"Personal projects"} />
-    <div className="pt-[40px]">
-    <SubHeading heading={"programing languages And Scripting "} />
-      <div className="flex py-[30px]  overflow-x-auto">
+    <div id="skillcontainer" className="pt-[60px] sm:py-[40px]">
+      <Heading heading={"Skills"} />
+    <div className="sm:pt-[40px]">
+      <div id="skills" className="flex py-[30px]  overflow-x-auto">
         {por.map((e, i) => {
           return (
             <div key={i}>
@@ -47,27 +44,7 @@ const Skills = () => {
           );
         })}
       </div>
-      <SubHeading heading={"frame Works, libraries & Database"} />
-      <div className="flex py-[30px]  overflow-x-auto">
-        {frame.map((e, i) => {
-          return (
-            <div key={i}>
-              <Skillcard icon={e} />
-            </div>
-          );
-        })}
-      </div>
-      <SubHeading heading={"Project management Skills"} />
-      <div className="flex py-[30px] overflow-x-auto">
-        {pro.map((e, i) => {
-          return (
-            <div key={i}>
-              <Skillcard icon={e} />
-            </div>
-          );
-        })}
-      </div>
-    </div>
+     </div>
     </div>
   );
 };
