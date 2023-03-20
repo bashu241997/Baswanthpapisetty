@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
@@ -20,42 +20,63 @@ html {
 .roboto {
     font-family: 'Roboto';
 }
-.robotom{
+
+.robotom {
     font-family: 'Roboto Mono' !important;
 }
+
 .Staatliches {
     font-family: 'Staatliches';
 }
+
 .ubuntum {
     font-family: 'Ubuntu Mono';
 }
-.pacifo{
+
+.pacifo {
     font-family: 'Pacifico';
 }
-.fullheight{
+
+.fullheight {
     min-height: 100vh;
 }
-.gradienticon{
-    background:linear-gradient(134.85deg, #BCD1FF 1.75%, #9CBBFF 100%), #BCD1FF
+
+.gradienticon {
+    background: linear-gradient(134.85deg, #BCD1FF 1.75%, #9CBBFF 100%), #BCD1FF
 }
+
 #skills::-webkit-scrollbar {
     display: none;
-  }
+}
 
-#skills{
+#skills {
     margin: 50 auto;
     white-space: nowrap;
     overflow: hidden;
 }
 
 #skills div {
-    animation: marquee 10s linear infinite;
+    animation: marquee 15s linear infinite;
 }
+
 @keyframes marquee {
     0% {
-      transform: translate(50%, 0);
+        transform: translate3d(0px, 0, 0);
     }
+
     100% {
-      transform: translate(-350%, 0);
+        transform: translate3d(-650px, 0, 0);
     }
-  }
+}
+
+@media screen and (max-width: 480px) {
+    @keyframes marquee {
+        0% {
+            transform: translate3d(0px, 0, 0);
+        }
+
+        100% {
+            transform: translate3d(-720px, 0, 0);
+        }
+    }
+}
