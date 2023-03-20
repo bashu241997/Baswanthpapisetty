@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, SubHeading } from "../../common/Heading";
+import { Heading } from "../../common/Heading";
 import Java from "../../assets/Java.svg";
 import html from "../../assets/Html5.svg";
 import css from "../../assets/css3.svg";
@@ -15,8 +15,17 @@ import github from "../../assets/Git.svg";
 import bitbucket from "../../assets/Bitbucket.svg";
 import vscode from "../../assets/vscode.svg";
 import Skillcard from "../../common/Skillcard";
+import Slider from "react-slick";
 
 const Skills = () => {
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 5,
+  //   slidesToScroll: 3,
+  //   autoplay:true
+  // };
   const por = [
     { title: "HTML 5", icon: html },
     { title: "Css 3", icon: css },
@@ -36,13 +45,15 @@ const Skills = () => {
       <Heading heading={"Skills"} />
     <div className="sm:pt-[40px]">
       <div id="skills" className="flex py-[30px]  overflow-x-auto">
+      {/* <Slider {...settings}> */}
         {por.map((e, i) => {
           return (
             <div key={i}>
               <Skillcard icon={e} />
             </div>
-          );
+          )
         })}
+        {/* </Slider> */}
       </div>
      </div>
     </div>
