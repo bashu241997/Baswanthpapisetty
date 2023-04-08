@@ -42,7 +42,7 @@ const Project = () => {
     <div id="about" className="py-[60px] sm:py-[40px]">
       <Heading heading={"Personal projects"} />
       <ShortHeading heading={sub} />
-      <div className="flex flex-col sm:flex-row items-center py-[40px] justify-around">
+      <div className="flex flex-col md:flex-row items-center py-[40px] justify-around">
         {Data.length > 0 &&
           Data.map((e,i) => {
             return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from '../../assets/employee.svg'
+import Profile from '../../assets/profile.svg'
 import Git from '../../assets/git-alt.svg'
 import Lin from '../../assets/linkedin-in.svg'
 import Ins from '../../assets/instagram.svg'
@@ -9,7 +9,7 @@ const Home = () => {
   return (<>
     <div id='title' className='text-2xl sm:text-4xl pl-6 text-primary font-extrabold capitalize pacifo pt-[40px]'>baswanth</div>
     <div id='home' className='py-8 flex flex-col sm:flex-row min-h-[95vh] text-primary justify-center items-center gap-4'>
-      <div  id='home-leftcontainer' className='pl-6 sm:pl-0'> 
+      <div  id='home-leftcontainer' className='pl-6 sm:pl-4'> 
         <div className='ubuntum text-2xl uppercase font-bold'>welcome i'm</div>
         <div className='Staatliches text-4xl sm:text-6xl capitalize font-bold pt-4 pb-6'>baswanth papisetty</div>
         <div className='ubuntum text-2xl capitalize font-bold'>web and mobile application developer</div>
@@ -20,8 +20,8 @@ const Home = () => {
           <a href="https://bashu-53054.web.app/" className="px-3 "><img src={Glob} className="w-[40px] h-[40px]" alt="globe" /></a>
         </div>
         <div className='flex pb-6'>
-          <button className=' scale-100 hover:scale-110 duration-300 bg-primary text-white uppercase rounded-[50px] py-3 w-[120px] font-bold mr-3'>About me</button>
-          <button className=' scale-100 hover:scale-110 duration-300 bg-background text-primary border-4 border-primary uppercase rounded-[50px] py-3 font-bold w-[120px] mr-3'>projects</button>
+          <a href="#about" className=' scale-100 hover:scale-110 text-center duration-300 bg-primary text-white uppercase rounded-[50px] py-3 w-[120px] font-bold mr-3'>About me</a>
+          <a href="#skillcontainer" className=' scale-100 hover:scale-110 text-center duration-300 bg-background text-primary border-4 border-primary uppercase rounded-[50px] py-3 font-bold w-[120px] mr-3'>projects</a>
         </div>
       </div>
 

@@ -16,7 +16,7 @@ const About = () => {
           <SubHeading heading={"I’m Baswanth Web application Developer"} />
           <p className="ubuntum text-2xl font-semibold text-justify py-4 pl-3 ">{content()}</p>
           <div className="pt-4">
-          <button className='scale-100 hover:scale-110 duration-300 bg-primary text-white uppercase rounded-[50px] py-3 w-[120px] font-bold mr-3'>resume</button>
+          {/* <button className='scale-100 hover:scale-110 duration-300 bg-primary text-white uppercase rounded-[50px] py-3 w-[120px] font-bold mr-3'>resume</button> */}
           </div>
         </div>
 
