@@ -3,7 +3,7 @@ import { Globedisplay } from '../assets/icons'
 
 const ProjectCard = ({key,title,src,demo,source,duration,subtitle}) => {
   return (
-    <div className='flex mt-3  bg-[#d9ddf6] text-[#333] border-4 border-[#d9ddf6] rounded-[20px] overflow-hidden mx-3 flex-col w-full items-center justify-start' key={key}>
+    <div className='flex mt-3 bg-[#d9ddf6] text-[#333] border-4 border-[#d9ddf6] rounded-[20px] overflow-hidden mx-3 flex-col w-full items-center justify-start' key={key}>
         <div className='w-[300px] h-[150px] overflow-hidden '>
             <img src={src} alt='key'/>
         </div>
