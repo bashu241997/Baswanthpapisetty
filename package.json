@@ -4,13 +4,23 @@
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.5.0",
+    "@react-three/drei": "^9.78.2",
+    "@react-three/fiber": "^8.13.5",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^10.13.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-parallax-tilt": "^1.7.154",
+    "react-particles": "^2.11.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
+    "three": "^0.154.0",
+    "tsparticles": "^2.11.0",
+    "tsparticles-slim": "^2.11.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -1,24 +1,57 @@
-import React from 'react'
-import { Globedisplay } from '../assets/icons'
+import  Tilt  from "react-parallax-tilt";
+import { motion } from "framer-motion";
+import { fadeIn } from "../styles";
+import { Git } from "../assets/icons";
 
-const ProjectCard = ({key,title,src,demo,source,duration,subtitle}) => {
+export const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  color,
+  source_code_link,
+}) => {
   return (
-    <div className='flex mt-3 bg-[#d9ddf6] text-[#333] border-4 border-[#d9ddf6] rounded-[20px] overflow-hidden mx-3 flex-col w-full items-center justify-start' key={key}>
-        <div className='w-[300px] h-[150px] overflow-hidden '>
-            <img src={src} alt='key'/>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <Tilt
+        reset={false}
+        className="bg-[#fff] p-4 shadow-ld rounded-2xl sm:w-[350px] w-full"
+      >
+        <div className="relative w-full h-[150px]">
+          <img
+            src={image}
+            alt="project_image"
+            className="w-full h-full object-cover rounded-2xl"
+          />
         </div>
-        <div className='p-4 flex justify-between flex-col'> 
-          <div className='flex justify-between items-center font-bold text-lg'>  <h3>{title}</h3> <span>{duration}</span></div>
-            <h4 className='px-2 py-3 text-[14px] h-[220px] text-justify'>
-                {subtitle}
-            </h4>
-            <div className='flex justify-between items-center w-full font-bold text-[12px]'>
-                <div className='flex justify-start items-center'><Globedisplay /><a href={`${demo}`} className='pl-4'>Demo</a></div>
-                <div><a href={`${source}`}>Source code </a></div>
-            </div>
-        </div>
-    </div>
-  )
-}
 
-export default ProjectCard
+        <div className="mt-5 min-h-[150px]">
+          <h3 className={`text-[24px] font-bold ${color}`}>{name}</h3>
+          <p className="mt-2 text-[#333] font-semibold text-[14px]">
+            {description}
+          </p>
+        </div>
+        <div
+          onClick={() => window.open(source_code_link, "_blank")}
+          className="py-4 w-full h-10 rounded-full flex justify-end items-center cursor-pointer"
+        >
+          <Git />{" "}
+          <span className="px-2 text-[#333] font-semibold text-[14px]">
+            Code
+          </span>
+        </div>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] px-2 font-bold ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+      </Tilt>
+    </motion.div>
+  );
+};

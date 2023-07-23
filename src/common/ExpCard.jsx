@@ -1,38 +1,50 @@
-import React from "react";
-import { ShowMore } from "../assets/icons";
 
-const ExpCard = ({key,title,subtitle,duration, right = false }) => {
+import {
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+
+import "react-vertical-timeline-component/style.min.css";
+export const ExperienceCard = ({ experience }) => {
   return (
-    <div key={key} className="w-full py-[40px] flex justify-center items-center">
-     
-      <div className="w-[350px] md:w-[500px] flex border-2 border-[#d9ddf6] rounded-[20px] overflow-hidden md:mx-[15px]">
-        {!right && (
-          <div className="bg-[#d9ddf6] p-[30px] flex justify-center items-center">
-            <img
-              alt="icon"
-              src={require("../assets/Group.png")}
-              className="w-[50px]"
-            />
-          </div>
-        )}
-        <div className="uppercase px-[15px]">
-          <h4 className="font-bold text-[20px] pt-[15px]">{title}</h4>
-          <h5 className="font-bold text-[16px] pt-[10px]">{subtitle}</h5>
-          <h6 className="font-bold text-[14px] py-[20px]">{duration}</h6>
+    <VerticalTimelineElement
+      contentStyle={{
+        color: "#333",
+      }}
+      className="bg-transparent p-0"
+      date={experience.date}
+      iconStyle={{ background: experience.iconBg }}
+      icon={
+        <div className='flex justify-center items-center w-full h-full'>
+          <img
+            src={experience.icon}
+            alt={experience.company_name}
+            className='w-[60%] h-[60%] object-contain'
+          />
         </div>
-        {right && (
-          <div className="bg-[#d9ddf6] p-[30px] flex justify-center items-center">
-            <img
-              alt="icon"
-              src={require("../assets/Group.png")}
-              className="w-[50px]"
-            />
-          </div>
-        )}
+      }
+    >
+   <div className="">
+   <div>
+        <h3 className='text-[24px] font-bold bg-gradient-to-r from-pink-600 via-red-500 to-yellow-400 inline-block text-transparent bg-clip-text'>{experience.title}</h3>
+        <p
+          className='text-secondary text-[16px] font-semibold'
+          style={{ margin: 0 }}
+        >
+          {experience.company_name}
+        </p>
       </div>
-  
-    </div>
+
+      <ul className='mt-5 list-disc ml-5 space-y-2'>
+        {experience.points.map((point, index) => (
+          <li
+            key={`experience-point-${index}`}
+            className='text-white-100 text-[14px] pl-1 tracking-wider'
+          >
+            {point}
+          </li>
+        ))}
+      </ul>
+   </div>
+    </VerticalTimelineElement>
   );
 };
-
-export default ExpCard;
