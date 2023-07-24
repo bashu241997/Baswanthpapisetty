@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
-
 import { styles, slideIn } from "../styles";
 
 const Contact = () => {
@@ -43,7 +41,7 @@ const Contact = () => {
 <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
-      <motion.div
+      <div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
@@ -96,9 +94,9 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
+      </div>
 
-      <motion.div
+      <div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
@@ -113,7 +111,7 @@ const Contact = () => {
             src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Putta estate, MS Nagar, Parameshwari Nagar, Nellore&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </div>
-      </motion.div>
+      </div>
     </div>
 </div>
   );

@@ -2,7 +2,6 @@ import React from 'react'
 import {
   VerticalTimeline,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
 import Acc from "../assets/acc.png";
 import Wal from "../assets/wal.png";
 import Tcs from "../assets/tcs.png";
@@ -55,14 +54,14 @@ const Experiences = () => {
       
   return (
     <div className='min-h-[100vh] pb-[30px]'>
-          <motion.div variants={textVariant()}>
+          <div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far & My
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience.
         </h2>
-      </motion.div>
+      </div>
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>

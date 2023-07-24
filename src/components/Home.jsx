@@ -1,10 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { styles, slideIn } from "../styles";
-import { motion } from "framer-motion";
-
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+const exampleVariant = {
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 },
+}
 const Home = () => {
   const history = useNavigate();
+  const control = useAnimation()
+  const [ref, inView] = useInView()
   return (
     <section
       className={`container w-full flex flex-col items-center justify-around min-h-[90vh] mx-auto`}
@@ -19,9 +25,9 @@ const Home = () => {
             />
           </div>
           <div className="px-6">
-            <motion.div variants={slideIn()}>
-              <h1 className={`${styles.heroHeadText}`}>
-                Hi, I'm <span className="animate-bounce text-primary">Baswanth</span>
+            <motion.div variants={exampleVariant} animate={{ x: 0,transition:{duration: 1} }} initial={{ x: 1000 }}>
+              <h1 className={` ${styles.heroHeadText}`}>
+                Hi, I'm <span className="text-primary">Baswanth</span>
               </h1>
             </motion.div>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
@@ -50,7 +56,7 @@ const Home = () => {
       <div className=" w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#333] flex justify-center items-start p-2">
-            <motion.div
+            <div
               animate={{
                 y: [0, 24, 0],
               }}

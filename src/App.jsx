@@ -1,15 +1,13 @@
-import React,{useCallback} from "react";
+import React from "react";
 import "./app.css";
 import Layout from "./common/Layout";
 import { BrowserRouter } from "react-router-dom";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles"; 
 // import { loadSlim } from "tsparticles-slim";
 function App() {
-  const particlesInit = useCallback(async engine => {
-    await loadFull(engine);
-    // await loadSlim(engine);
-}, []);
+//   const particlesInit = useCallback(async engine => {
+//     await loadFull(engine);
+//     // await loadSlim(engine);
+// }, []);
 
   return (<div className="absolute w-full h-auto z-[-1] bg-gradient-to-br from-green-200 via-slate-300 to-rose-200">   
   {/* <Particles

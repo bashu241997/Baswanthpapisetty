@@ -1,5 +1,4 @@
 import  Tilt  from "react-parallax-tilt";
-import { motion } from "framer-motion";
 import { fadeIn } from "../styles";
 import { Git } from "../assets/icons";
 
@@ -13,9 +12,8 @@ export const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div variants={fadeIn("up", "spring", index , 0.75)}>
       <Tilt
-        reset={false}
         className="bg-[#fff] p-4 shadow-ld rounded-2xl sm:w-[350px] w-full"
       >
         <div className="relative w-full h-[150px]">
@@ -52,6 +50,6 @@ export const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };

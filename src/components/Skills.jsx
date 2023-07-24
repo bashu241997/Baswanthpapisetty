@@ -1,11 +1,10 @@
 import React from "react";
 import  Tilt  from "react-parallax-tilt";
-import { motion } from "framer-motion";
 import { styles, fadeIn, textVariant, slideIn } from "../styles";
 
 const ServiceCard = ({ index, title, classgiven }) => (
   <Tilt className="w-[250px] ">
-    <motion.div
+    <div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className={`w-full  p-[1px] rounded-[20px] shadow-lg ${classgiven}`}
     >
@@ -21,7 +20,7 @@ const ServiceCard = ({ index, title, classgiven }) => (
           {title}
         </h3>
       </div>
-    </motion.div>
+    </div>
   </Tilt>
 );
 export const Skills = () => {
@@ -42,12 +41,12 @@ const one = `bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))
 const two = `bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500`
   return (
     <div className="min-h-[50vh] p-6">
-      <motion.div variants={slideIn()}>
+      <div variants={slideIn()}>
         <p className={`${styles.sectionSubText} text-center`}>
           My Technical strengths & my
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>Skills.</h2>
-      </motion.div>
+      </div>
 
       <div className="my-20 px-4 flex-wrap flex gap-10">
         {services.map((service, index) => (
