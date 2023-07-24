@@ -2,6 +2,8 @@ import React from "react";
 import  Tilt  from "react-parallax-tilt";
 import { styles, fadeIn, textVariant, slideIn } from "../styles";
 
+import { FadeInWhenVisible } from "../common/fadein";
+
 const ServiceCard = ({ index, title, classgiven }) => (
   <Tilt className="w-[250px] ">
     <div
@@ -45,7 +47,7 @@ const two = `bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] f
         <p className={`${styles.sectionSubText} text-center`}>
           My Technical strengths & my
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Skills.</h2>
+       <FadeInWhenVisible timing={2}> <h2 className={`${styles.sectionHeadText} text-center`}>Skills.</h2></FadeInWhenVisible>
       </div>
 
       <div className="my-20 px-4 flex-wrap flex gap-10">

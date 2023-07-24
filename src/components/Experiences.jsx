@@ -9,6 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { ExperienceCard } from '../common/ExpCard';
 import { styles,textVariant } from '../styles';
 
+import { FadeInWhenVisible } from "../common/fadein";
 const Experiences = () => {
     const experiences = [
         {
@@ -58,9 +59,9 @@ const Experiences = () => {
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far & My
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+      <FadeInWhenVisible timing={2}>  <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience.
-        </h2>
+        </h2></FadeInWhenVisible>
       </div>
 
       <div className='mt-20 flex flex-col'>

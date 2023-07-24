@@ -3,38 +3,71 @@ import { useNavigate } from "react-router-dom";
 import { styles, slideIn } from "../styles";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { FadeInWhenVisible } from "../common/fadein";
 const exampleVariant = {
   visible: { opacity: 1 },
   hidden: { opacity: 0 },
-}
+};
 const Home = () => {
   const history = useNavigate();
-  const control = useAnimation()
-  const [ref, inView] = useInView()
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  console.log(control, ref, inView);
   return (
     <section
       className={`container w-full flex flex-col items-center justify-around min-h-[90vh] mx-auto`}
     >
       <div className={`flex-row flex justify-start items-start`}>
         <div className="flex flex-col sm:flex-row w-full items-center justify-center">
-          <div className="flex px-[20px] items-center justify-between">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+              scale: {
+                type: "spring",
+                damping: 5,
+                stiffness: 100,
+                restDelta: 0.001,
+              },
+            }}
+            className="flex px-[20px] items-center justify-between"
+          >
             <img
               src={require("../assets/profile.png")}
               className="w-[300px] h-[300px]"
               alt="profile"
             />
-          </div>
+          </motion.div>
           <div className="px-6">
-            <motion.div variants={exampleVariant} animate={{ x: 0,transition:{duration: 1} }} initial={{ x: 1000 }}>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+                scale: {
+                  type: "spring",
+                  damping: 5,
+                  stiffness: 100,
+                  restDelta: 0.001,
+                },
+              }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ root: ref }}
+            >
               <h1 className={` ${styles.heroHeadText}`}>
                 Hi, I'm <span className="text-primary">Baswanth</span>
               </h1>
             </motion.div>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I Develop web and mobile applications,{" "}
-              <br className="sm:block hidden" />
-              With cutting edge technologies
-            </p>
+            <FadeInWhenVisible timing={1}>
+              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+                I Develop web and mobile applications,{" "}
+                <br className="sm:block hidden" />
+                With cutting edge technologies
+              </p>
+            </FadeInWhenVisible>
             <div className="pt-[35px]">
               <button
                 onClick={() => history("/projects")}
