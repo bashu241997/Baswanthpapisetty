@@ -56,10 +56,10 @@ const Experiences = () => {
   return (
     <div className='min-h-[100vh] pb-[30px]'>
           <div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+          <FadeInWhenVisible timing={2}>  <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far & My
-        </p>
-      <FadeInWhenVisible timing={2}>  <h2 className={`${styles.sectionHeadText} text-center`}>
+        </p> </FadeInWhenVisible>
+      <FadeInWhenVisible timing={1}>  <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience.
         </h2></FadeInWhenVisible>
       </div>

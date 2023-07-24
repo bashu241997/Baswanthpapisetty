@@ -6,6 +6,7 @@ import chat from "../assets/chat_app.png"
 import { ProjectCard } from "../common/ProjectCard";
 import { FadeInWhenVisible } from "../common/fadein";
 
+import { SlideUPWhenVisible } from "../common/slidein";
 
 const projects = () => {
 
@@ -92,8 +93,8 @@ const projects = () => {
   return (
     <div className="min-h-[70vh] pb-[40px]" >
       <div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-      <FadeInWhenVisible timing={2}><h2 className={`${styles.sectionHeadText}`}>Projects.</h2></FadeInWhenVisible> 
+      <FadeInWhenVisible timing={2}>  <p className={`${styles.sectionSubText} `}>My work</p></FadeInWhenVisible>
+      <FadeInWhenVisible timing={1}><h2 className={`${styles.sectionHeadText}`}>Projects.</h2></FadeInWhenVisible> 
       </div>
       <FadeInWhenVisible timing={2}> <div className="w-full flex">
         <p
@@ -106,9 +107,9 @@ const projects = () => {
         </p>
       </div></FadeInWhenVisible>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='pt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+         <SlideUPWhenVisible timing={index + 1}> <ProjectCard key={`project-${index}`} index={index} {...project} /></SlideUPWhenVisible>
         ))}
       </div>
     </div>

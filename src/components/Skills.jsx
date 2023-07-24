@@ -2,6 +2,7 @@ import React from "react";
 import  Tilt  from "react-parallax-tilt";
 import { styles, fadeIn, textVariant, slideIn } from "../styles";
 
+import { SlideInWhenVisible } from "../common/slidein";
 import { FadeInWhenVisible } from "../common/fadein";
 
 const ServiceCard = ({ index, title, classgiven }) => (
@@ -52,7 +53,7 @@ const two = `bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] f
 
       <div className="my-20 px-4 flex-wrap flex gap-10">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} classgiven={(index % 2==0)?one:two}  {...service} />
+       <SlideInWhenVisible timing={(index + 1) } >   <ServiceCard key={service.title} index={index} classgiven={(index % 2==0)?one:two}  {...service} /></SlideInWhenVisible>
         ))}
       </div>
     </div>

@@ -4,6 +4,9 @@ import { styles, slideIn } from "../styles";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FadeInWhenVisible } from "../common/fadein";
+import { SlideInWhenVisible } from "../common/slidein";
+
+
 const exampleVariant = {
   visible: { opacity: 1 },
   hidden: { opacity: 0 },
@@ -19,19 +22,8 @@ const Home = () => {
     >
       <div className={`flex-row flex justify-start items-start`}>
         <div className="flex flex-col sm:flex-row w-full items-center justify-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.3,
-              ease: [0, 0.71, 0.2, 1.01],
-              scale: {
-                type: "spring",
-                damping: 5,
-                stiffness: 100,
-                restDelta: 0.001,
-              },
-            }}
+          <SlideInWhenVisible timing={1} side="l"><div
+
             className="flex px-[20px] items-center justify-between"
           >
             <img
@@ -39,28 +31,14 @@ const Home = () => {
               className="w-[300px] h-[300px]"
               alt="profile"
             />
-          </motion.div>
+          </div></SlideInWhenVisible>
           <div className="px-6">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.3,
-                ease: [0, 0.71, 0.2, 1.01],
-                scale: {
-                  type: "spring",
-                  damping: 5,
-                  stiffness: 100,
-                  restDelta: 0.001,
-                },
-              }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ root: ref }}
-            >
+            <SlideInWhenVisible timing={1} side="r">
+           
               <h1 className={` ${styles.heroHeadText}`}>
                 Hi, I'm <span className="text-primary">Baswanth</span>
               </h1>
-            </motion.div>
+            </SlideInWhenVisible>
             <FadeInWhenVisible timing={1}>
               <p className={`${styles.heroSubText} mt-2 text-white-100`}>
                 I Develop web and mobile applications,{" "}
