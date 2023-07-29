@@ -8,9 +8,9 @@ export const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        color: "#333",
+        color: "#fff",
       }}
-      className="bg-transparent p-0"
+      className="p-0"
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -23,7 +23,7 @@ export const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
-   <div className="">
+   <div className="bg-[#fff]">
    <div>
         <h3 className='text-[24px] font-bold bg-gradient-to-r from-pink-600 via-red-500 to-yellow-400 inline-block text-transparent bg-clip-text'>{experience.title}</h3>
         <p
@@ -38,7 +38,7 @@ export const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className='text-[#333] text-[14px] pl-1 tracking-wider'
           >
             {point}
           </li>

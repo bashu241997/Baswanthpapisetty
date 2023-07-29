@@ -13,7 +13,6 @@ export const FadeInWhenVisible = ({timing, children }) => {
       }else{
         controls.start("hidden");
       }
-      console.log(inView)
     }, [controls, inView]);
   
     return (

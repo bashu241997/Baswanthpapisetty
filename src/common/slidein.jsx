@@ -13,7 +13,6 @@ export const SlideInWhenVisible = ({timing,side = 'l', children }) => {
       }else{
         controls.start("hidden");
       }
-      console.log(inView)
     }, [controls, inView]);
   
     return (
@@ -36,14 +35,13 @@ export const SlideInWhenVisible = ({timing,side = 'l', children }) => {
   export const SlideUPWhenVisible = ({timing,side = 'd', children }) => {
     const controls = useAnimation();
     const [ref, inView] = useInView();
-    const sided = side === 'd' ? '100%' : '-100%'
+    const sided = side === 'd' ? '50%' : '-50%'
     useEffect(() => {
       if (inView) {
         controls.start("visible");
       }else{
         controls.start("hidden");
       }
-      console.log(inView)
     }, [controls, inView]);
   
     return (

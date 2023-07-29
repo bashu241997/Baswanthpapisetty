@@ -9,7 +9,7 @@ function App() {
 //     // await loadSlim(engine);
 // }, []);
 
-  return (<div className="absolute w-full h-auto z-[-1] bg-gradient-to-br from-green-200 via-slate-300 to-rose-200">   
+  return (<div className="overflow-hidden absolute w-full h-auto z-[-1] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">   
   {/* <Particles
     id="tsparticles"
     init={particlesInit}
