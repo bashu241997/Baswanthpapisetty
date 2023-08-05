@@ -2,15 +2,16 @@ import React from "react";
 import "./app.css";
 import Layout from "./common/Layout";
 import { BrowserRouter } from "react-router-dom";
-// import { loadSlim } from "tsparticles-slim";
+import { loadFull } from "tsparticles";
+import Particles from "react-particles";
+
 function App() {
-//   const particlesInit = useCallback(async engine => {
-//     await loadFull(engine);
-//     // await loadSlim(engine);
-// }, []);
+  const particlesInit = React.useCallback(async engine => {
+    await loadFull(engine);
+}, []);
 
   return (<div className="overflow-hidden absolute w-full h-auto z-[-1] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">   
-  {/* <Particles
+  <Particles
     id="tsparticles"
     init={particlesInit}
     className="particles-app"
@@ -78,10 +79,10 @@ function App() {
         },
         detectRetina: true,
     }}
-/> */}
+/>
 
       <BrowserRouter  future={{ v7_startTransition: true }}>
-        <div className="container mx-auto sm:px-8 px-4">
+        <div className="container mx-auto sm:px-6">
         <Layout />
         </div>
       </BrowserRouter>

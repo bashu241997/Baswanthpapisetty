@@ -4,7 +4,7 @@ import { FadeInWhenVisible } from "../common/fadein";
 
 const ServiceCard = ({ index, title,Icon, classgiven,sub }) => (
   <FadeInWhenVisible timing={index + 1}>
-    <div className={`my-4 w-[300px] h-[150px] overflow-hidden cursor-pointer rounded-[20px] scale-100 duration-300 hover:scale-110 shadow-lg ${classgiven} `}>
+    <div className={`my-4 sm:mx-4 w-[300px] h-[150px] overflow-hidden cursor-pointer rounded-[20px] scale-100 duration-300 hover:scale-110 shadow-lg ${classgiven} `}>
         <div
           className="group bg-tertiary rounded-[20px] py-5 px-12 min-h-[150px] flex justify-evenly items-center flex-col"
         >
@@ -46,7 +46,7 @@ export const Skills = () => {
   const one = `bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-300 via-blue-500 to-purple-600`;
   const two = `bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500`;
   return (
-    <div className="min-h-[50vh] p-6">
+    <div className="min-h-[80vh] flex flex-col items-center justify-center p-6">
       <div variants={slideIn()}>
         <p className={`${styles.sectionSubText} text-center`}>
           My Technical strengths & my

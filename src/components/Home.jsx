@@ -1,22 +1,12 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import { Model } from "../common/Model";
-import { useNavigate } from "react-router-dom";
 import { styles } from "../styles";
-import { useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import { FadeInWhenVisible } from "../common/fadein";
 import { SlideInWhenVisible } from "../common/slidein";
 
-const exampleVariant = {
-  visible: { opacity: 1 },
-  hidden: { opacity: 0 },
-};
 const Home = () => {
-  const history = useNavigate();
-  const control = useAnimation();
-  const [ref, inView] = useInView();
 
   return (
     <div className="min-h-[90vh] ">
@@ -39,7 +29,7 @@ const Home = () => {
       <section
         className={`z-[10] container w-full flex flex-col items-center sm:items-start justify-around min-h-[80vh] mx-auto`}
       >
-        <div className={`flex-row flex justify-start items-start`}>
+        <div className={`flex-col flex justify-center items-center`}>
           <div className="flex flex-col sm:flex-row w-full items-center justify-start">
             <div className="px-6">
             <FadeInWhenVisible timing={1}>
@@ -58,18 +48,18 @@ const Home = () => {
                 </p>
               </FadeInWhenVisible>
               <div className="pt-[35px]">
-                <button
-                  onClick={() => history("/projects")}
+                <a
+                href="#projects"
                   className="animate-bounce uppercase py-1 px-4 bg-[#51b375] text-[#fff] font-bold rounded-[30px] mr-2 border-4 border-[#51b375]"
                 >
                   projects
-                </button>
-                <button
-                  onClick={() => history("/contact")}
+                </a>
+                <a
+                  href="#contact"
                   className="uppercase py-1 px-4 text-[#51b375] font-bold rounded-[30px] border-4 border-[#51b375]"
                 >
                   contact
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -78,12 +68,12 @@ const Home = () => {
         <div className=" w-full flex justify-center items-center">
           <a href="#about">
             <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#fff] flex justify-center items-start p-2">
-              <div
+              <motion.div
                 animate={{
                   y: [0, 24, 0],
                 }}
                 transition={{
-                  duration: 1.5,
+                  duration: 1,
                   repeat: Infinity,
                   repeatType: "loop",
                 }}

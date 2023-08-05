@@ -91,10 +91,10 @@ const projects = () => {
       ];
 
   return (
-    <div className="min-h-[70vh] pb-[40px]" >
+    <div id="projects" className="min-h-[70vh] pt-[30px] pb-[40px]" >
       <div variants={textVariant()}>
       <FadeInWhenVisible timing={2}>  <p className={`${styles.sectionSubText} `}>My work</p></FadeInWhenVisible>
-      <FadeInWhenVisible timing={1}><h2 className={`${styles.sectionHeadText}`}>Projects.</h2></FadeInWhenVisible> 
+      <FadeInWhenVisible timing={3}><h2 className={`${styles.sectionHeadText}`}>Projects.</h2></FadeInWhenVisible> 
       </div>
       <FadeInWhenVisible timing={2}> <div className="w-full flex">
         <p
