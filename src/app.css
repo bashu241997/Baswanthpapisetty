@@ -1,9 +1,3 @@
-.Home_background {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
   .gmap_canvas {
     overflow: hidden;
     background: none !important;
@@ -13,10 +7,4 @@
   .gmap_iframe {
     width: 100% !important;
     height: 100% !important;
-  }
-
-  .gradientborder{
-    border-image: linear-gradient(#ffffff, #000000) 90;
-    border-width: 0px 2px 0px 0px;
-    border-style: solid;
   }
