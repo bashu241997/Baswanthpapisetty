@@ -2,13 +2,13 @@ import React from "react";
 import "./app.css";
 import Layout from "./common/Layout";
 import { BrowserRouter } from "react-router-dom";
-import { loadFull } from "tsparticles";
-import Particles from "react-particles";
+// import { loadFull } from "tsparticles";
+// import Particles from "react-particles";
 
 function App() {
-  const particlesInit = React.useCallback(async engine => {
-    await loadFull(engine);
-}, []);
+//   const particlesInit = React.useCallback(async engine => {
+//     await loadFull(engine);
+// }, []);
 
   return (<div className="overflow-hidden Text-[#333] bg-[#e8e8e8] absolute w-full h-auto z-[-1]">   
   {/* <Particles

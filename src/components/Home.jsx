@@ -67,7 +67,7 @@ const Home = () => {
 
         <div className=" w-full flex justify-center items-center">
           <a href="#about">
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#fff] flex justify-center items-start p-2">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#333] flex justify-center items-start p-2">
               <motion.div
                 animate={{
                   y: [0, 24, 0],
@@ -77,7 +77,7 @@ const Home = () => {
                   repeat: Infinity,
                   repeatType: "loop",
                 }}
-                className="w-3 h-3 rounded-full bg-[#fff] mb-1"
+                className="w-3 h-3 rounded-full bg-[#333] mb-1"
               />
             </div>
           </a>

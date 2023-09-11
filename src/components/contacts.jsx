@@ -56,7 +56,7 @@ const Contact = () => {
               className="mt-12 flex flex-col gap-8"
             >
               <label className="flex flex-col">
-                <span className="text-[#fff] font-medium mb-4">Your Name</span>
+                <span className="text-[#333] font-medium mb-4">Your Name</span>
                 <input
                   type="text"
                   name="name"
@@ -67,7 +67,7 @@ const Contact = () => {
                 />
               </label>
               <label className="flex flex-col">
-                <span className="text-[#fff] font-medium mb-4">Your email</span>
+                <span className="text-[#333] font-medium mb-4">Your email</span>
                 <input
                   type="email"
                   name="email"
@@ -78,7 +78,7 @@ const Contact = () => {
                 />
               </label>
               <label className="flex flex-col">
-                <span className="text-[#fff] font-medium mb-4">
+                <span className="text-[#333] font-medium mb-4">
                   Your Message
                 </span>
                 <textarea
@@ -93,7 +93,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="bg-primary py-3 px-8 rounded-xl outline-none w-fit text-[#333] font-bold shadow-md shadow-primary"
+                className="bg-[#333] py-3 px-8 rounded-xl outline-none w-fit text-[#e8e8e8] font-bold hover:bg-slate-700"
               >
                 {loading ? "Sending..." : "Send"}
               </button>

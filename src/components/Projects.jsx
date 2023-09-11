@@ -3,6 +3,8 @@ import { styles, fadeIn, textVariant } from "../styles";
 import Disney from "../assets/disney_clone.png"
 import Weather from "../assets/Next.png"
 import chat from "../assets/chat_app.png"
+import Doctor from "../assets/doct.png"
+import Basicer from "../assets/bas.png"
 import { ProjectCard } from "../common/ProjectCard";
 import { FadeInWhenVisible } from "../common/fadein";
 
@@ -13,6 +15,31 @@ const projects = () => {
 
 
     const projects = [
+      {
+        name: 'Hospital management App',
+        color:`bg-gradient-to-r from-red-800 via-yellow-600 to-yellow-500 bg-clip-text`,
+        description:"A patient and doctor management system is a project focused on developing software to efficiently manage appointments, medical records, and communication between patients and healthcare providers.",
+         tags: [
+          {
+            name: "react typescript",
+            color: "text-blue-600",
+          },
+          {
+            name: "Next JS",
+            color: "text-green-600",
+          },
+          {
+            name: "tailwind",
+            color: "text-red-600",
+          }, {
+            name: "redux",
+            color: "text-green-600",
+          },
+        ],
+        image: Doctor,
+        source_code_link: "https://github.com/bashu241997/HMS",
+        domain:"https://hospitalmanagementsystemsproject.vercel.app/overview"
+      },
         {
           name: 'WEATHER APP',
           color:`bg-gradient-to-r from-red-800 via-yellow-600 to-yellow-500 bg-clip-text`,
@@ -34,6 +61,7 @@ const projects = () => {
           ],
           image: Weather,
           source_code_link: "https://github.com/bashu241997/improved-weather",
+          domain:"https://improved-weather.vercel.app/"
         },
         {
           name: "Whisper hub",
@@ -62,6 +90,7 @@ const projects = () => {
           ],
           image: chat,
           source_code_link: "https://github.com/bashu241997/private-cht",
+          domain:"https://clonedwebsites.web.app/login"
         },
         {
           name: 'MAGIC KINGDOM',
@@ -87,6 +116,29 @@ const projects = () => {
           ],
           image: Disney,
           source_code_link: "https://github.com/bashu241997/Disney-clone",
+          domain:"https://clonedwebsites.web.app/login"
+        },
+        {
+          name: 'Java Script Projects',
+          color:"bg-gradient-to-r from-red-500 to-green-500 bg-clip-text",
+          description:"Basic JavaScript projects involve creating simple web applications or interactive elements using JavaScript. These projects serve as foundational exercises to understand JavaScript's core concepts and build essential coding skills.",
+          tags: [
+            {
+              name: "Java Script",
+              color: "text-blue-600",
+            },
+            {
+              name: "Html",
+              color: "text-green-600",
+            },
+            {
+              name: "Css",
+              color: "text-red-600",
+            }
+          ],
+          image: Basicer,
+          source_code_link: "https://github.com/bashu241997/javascriptprojects",
+          domain:"https://samplejavascriptexampleapps.web.app/"
         },
       ];
 
