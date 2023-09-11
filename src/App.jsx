@@ -10,8 +10,8 @@ function App() {
     await loadFull(engine);
 }, []);
 
-  return (<div className="overflow-hidden absolute w-full h-auto z-[-1] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">   
-  <Particles
+  return (<div className="overflow-hidden Text-[#333] bg-[#e8e8e8] absolute w-full h-auto z-[-1]">   
+  {/* <Particles
     id="tsparticles"
     init={particlesInit}
     className="particles-app"
@@ -79,7 +79,7 @@ function App() {
         },
         detectRetina: true,
     }}
-/>
+/> */}
 
       <BrowserRouter  future={{ v7_startTransition: true }}>
         <div className="container mx-auto sm:px-6">

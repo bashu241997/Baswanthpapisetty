@@ -17,12 +17,12 @@ const About = () => {
         </div>
 
         <FadeInWhenVisible timing={2}> <p 
-          className="mt-[15px] text-[#fff] text-[17px] max-w-3xl leading-[30px]"
+          className="mt-[15px] text-[#333] text-[17px] max-w-3xl leading-[30px]"
         >
           {about}
         </p></FadeInWhenVisible>
 
-        <a href="#experience" className="block uppercase w-[200px] text-center mt-[30px] py-1 px-4 bg-[#fff] text-[#333] font-bold rounded-[30px] mr-2 border-4 border-[#fff]">
+        <a href="#experience" className="block uppercase w-[200px] text-center mt-[30px] py-1 px-4 bg-[#333] text-[#f7f7f7] font-bold rounded-[30px] mr-2 border-4 border-[#333]">
           experience
         </a>
     </div>

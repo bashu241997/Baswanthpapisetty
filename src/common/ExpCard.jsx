@@ -8,7 +8,7 @@ export const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        color: "#fff",
+        color: "#333",
       }}
       className="p-0"
       date={experience.date}

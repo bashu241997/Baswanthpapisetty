@@ -33,7 +33,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row w-full items-center justify-start">
             <div className="px-6">
             <FadeInWhenVisible timing={1}>
-                <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+                <p className={`${styles.heroSubText} mt-2 text-[#333]-100`}>
                   Full Stack developer
                 </p>
               </FadeInWhenVisible>
@@ -43,7 +43,7 @@ const Home = () => {
                 </h1>
               </SlideInWhenVisible>
               <FadeInWhenVisible timing={1}>
-                <p className={`${styles.heroSub2Text} mt-2 text-white-100`}>
+                <p className={`${styles.heroSub2Text} mt-2 text-[#333]-100`}>
                   papisetty from india
                 </p>
               </FadeInWhenVisible>
