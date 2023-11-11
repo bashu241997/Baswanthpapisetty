@@ -8,8 +8,6 @@ import Basicer from "../assets/bas.png"
 import { ProjectCard } from "../common/ProjectCard";
 import { FadeInWhenVisible } from "../common/fadein";
 
-import { SlideUPWhenVisible } from "../common/slidein";
-
 const projects = () => {
 
 
@@ -145,13 +143,13 @@ const projects = () => {
   return (
     <div id="projects" className="min-h-[70vh] pt-[30px] pb-[40px]" >
       <div variants={textVariant()}>
-      <FadeInWhenVisible timing={2}>  <p className={`${styles.sectionSubText} `}>My work</p></FadeInWhenVisible>
-      <FadeInWhenVisible timing={3}><h2 className={`${styles.sectionHeadText}`}>Projects.</h2></FadeInWhenVisible> 
+      <FadeInWhenVisible timing={1}>  <p className={`${styles.sectionSubText} `}>My work</p></FadeInWhenVisible>
+      <FadeInWhenVisible timing={1.5}><h2 className={`${styles.sectionHeadText}`}>Projects.</h2></FadeInWhenVisible> 
       </div>
-      <FadeInWhenVisible timing={2}> <div className="w-full flex">
+      <FadeInWhenVisible timing={1}> <div className="w-full flex">
         <p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-[#333] text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-[#94a3b8] text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -159,9 +157,9 @@ const projects = () => {
         </p>
       </div></FadeInWhenVisible>
 
-      <div className='pt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 p-4 flex gap-6 overflow-x-scroll flex-col sm:flex-row'>
         {projects.map((project, index) => (
-         <SlideUPWhenVisible timing={index + 1}> <ProjectCard key={`project-${index}`} index={index} {...project} /></SlideUPWhenVisible>
+         <FadeInWhenVisible timing={1}> <ProjectCard key={`project-${index}`} index={index} {...project} /></FadeInWhenVisible>
         ))}
       </div>
     </div>

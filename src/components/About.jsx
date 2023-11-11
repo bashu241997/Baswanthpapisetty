@@ -11,18 +11,18 @@ const About = () => {
     <div>
     <div
         >
-          <FadeInWhenVisible timing={2}><p className={styles.sectionSubText}>Introduction</p></FadeInWhenVisible>
+          <FadeInWhenVisible timing={1}><p className={styles.sectionSubText}>Introduction</p></FadeInWhenVisible>
           
-          <FadeInWhenVisible timing={2}><h2 className={styles.sectionHeadText}>Overview.</h2></FadeInWhenVisible>
+          <FadeInWhenVisible timing={1}><h2 className={styles.sectionHeadText}>Overview.</h2></FadeInWhenVisible>
         </div>
 
-        <FadeInWhenVisible timing={2}> <p 
-          className="mt-[15px] text-[#333] text-[17px] max-w-3xl leading-[30px]"
+        <FadeInWhenVisible timing={1}> <p 
+          className="mt-[15px] text-[#94a3b8] text-[17px] max-w-3xl leading-[30px]"
         >
           {about}
         </p></FadeInWhenVisible>
 
-        <a href="#experience" className="block uppercase w-[200px] text-center mt-[30px] py-1 px-4 bg-[#333] text-[#f7f7f7] font-bold rounded-[30px] mr-2 border-4 border-[#333]">
+        <a href="#experience" className="block uppercase w-[200px] text-center mt-[30px] py-2 px-4 bg-hero-pattern text-[#94a3b8] font-bold rounded-[30px] mr-2 border-2  border-[#307ae1]">
           experience
         </a>
     </div>

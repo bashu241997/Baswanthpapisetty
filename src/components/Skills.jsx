@@ -51,7 +51,7 @@ export const Skills = () => {
         <p className={`${styles.sectionSubText} text-center`}>
           My Technical strengths & my
         </p>
-        <FadeInWhenVisible timing={2}>
+        <FadeInWhenVisible timing={1}>
           <h2 className={`${styles.sectionHeadText} text-center`}>Services.</h2>
         </FadeInWhenVisible>
       </div>

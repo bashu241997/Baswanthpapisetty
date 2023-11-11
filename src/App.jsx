@@ -10,7 +10,7 @@ function App() {
 //     await loadFull(engine);
 // }, []);
 
-  return (<div className="overflow-hidden Text-[#333] bg-[#e8e8e8] absolute w-full h-auto z-[-1]">   
+  return (<div className="overflow-hidden bg-[#0d1117] absolute w-full h-auto z-[-1]">   
   {/* <Particles
     id="tsparticles"
     init={particlesInit}

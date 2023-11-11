@@ -1,7 +1,4 @@
 import React from 'react'
-import {
-  VerticalTimeline,
-} from "react-vertical-timeline-component";
 import Acc from "../assets/acc.png";
 import Wal from "../assets/wal.png";
 import Tcs from "../assets/tcs.png";
@@ -64,15 +61,15 @@ const Experiences = () => {
         </h2></FadeInWhenVisible>
       </div>
 
-      <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20">
+ 
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
+              time={index+1}
               experience={experience}
             />
           ))}
-        </VerticalTimeline>
       </div>
     </div>
   )

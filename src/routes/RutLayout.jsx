@@ -4,6 +4,7 @@ import Experience from "../components/Experiences";
 import { Skills } from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/contacts";
+import SkillContainer from "../components/skill";
 
 const RutLayout = () => {
   return (
@@ -11,8 +12,9 @@ const RutLayout = () => {
       <Home />
       <About />
       <Experience />
-      <Skills />
       <Projects />
+      <Skills />
+      <SkillContainer />
       <Contact />
     </>
   );
