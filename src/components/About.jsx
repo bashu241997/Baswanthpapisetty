@@ -7,7 +7,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className="min-h-[80vh] py-4 flex flex-col sm:flex-row justify-between items-center "
+        className=" pb-8 flex flex-col sm:flex-row justify-between items-center "
       >
         <div>
           <div>
@@ -22,14 +22,14 @@ const About = () => {
 
           <div timing={1}>
             {" "}
-            <p className="mt-[15px] text-[#626262] text-[17px] max-w-3xl leading-[30px]">
+            <p className="mt-[15px] text-[#626262] text-[17px] max-w-4xl leading-[30px]">
               {about}
             </p>
           </div>
 
           <a
             href="#experience"
-            className="block uppercase w-[200px] text-center mt-[30px] py-2 px-4 bg-[#307ae1] text-[#626262] font-bold rounded-[30px] mr-2 border-2  border-[#307ae1]"
+            className="block uppercase w-[200px] text-center mt-[30px] py-2 px-4 bg-[#307ae1] text-[#ffffff] font-bold rounded-[30px] mr-2 border-2  border-[#307ae1]"
           >
             experience
           </a>

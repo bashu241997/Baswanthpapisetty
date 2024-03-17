@@ -50,7 +50,7 @@ const Experiences = () => {
       ];
       
   return (
-    <div id='experience' className='min-h-[100vh] pb-[30px]'>
+    <div id='experience' className='min-h-[100vh] py-8'>
           <div variants={textVariant()}>
           <div timing={2}>  <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far & My
@@ -67,6 +67,7 @@ const Experiences = () => {
               key={`experience-${index}`}
               time={index+1}
               experience={experience}
+              
             />
           ))}
       </div>

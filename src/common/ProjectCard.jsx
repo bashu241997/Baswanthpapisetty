@@ -10,7 +10,7 @@ export const ProjectCard = ({
 }) => {
   return (
       <div
-        className="bg-exp-pattern border border-[#307ae1] p-4 text-[#333333]  p-[30px]  shadow-lg rounded-[20px] overflow-hidden w-[320px] sm:w-[350px] sm:h-[450px] scale-90 duration-300 hover:scale-100 w-full"
+        className="bg-exp-pattern border dotted shadow-xl border-[#cccccc] p-4 text-[#333333]  p-[30px]  shadow-lg rounded-[20px] overflow-hidden w-[320px] sm:w-[350px] sm:h-[450px] scale-90 duration-300 hover:scale-100 w-full"
       >
         <div className="p-4 mt-2 min-h-[150px]">
           <h3 className={`text-[24px] font-bold bg-gradient-to-r from-pink-600 via-red-500 to-yellow-400 inline-block text-transparent bg-clip-text`}>{name}</h3>

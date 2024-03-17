@@ -1,30 +1,25 @@
-
-export const ExperienceCard = ({ experience,time }) => {
+export const ExperienceCard = ({ icon, experience, time }) => {
   return (
-    <div timing={time}>
-    <div className="bg-exp-pattern p-4 text-[#333333] rounded-[5px] p-[30px]">
-      <div>
-        <h3 className="text-[20px]  mb-3 font-bold">
-          {experience.title} 
-        </h3>
-        <p
-          className="flex items-center text-[18px] text-[#333333] font-semibold"
-          style={{ margin: 0 }}
-        >
-          {experience.company_name} {` - ${experience.date}`}
-        </p>
-      </div>
+      <div className="bg-exp-pattern border dotted border-[#cccccc] shadow-lg p-4 text-[#333333] rounded-[10px] p-[30px]">
+        <div>
+          <h3 className="text-[20px]  mb-3 font-bold">{experience.title}</h3>
 
-      <ul className="mt-5 p-[20px] list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className="text-[#333333] text-[14px] pl-1 tracking-wider"
+          <div className="flex pt-3 pl-[30px]">
+            <img src={experience.icon} className="rounded-full w-[30px]" />{" "}
+            <p
+              className="flex items-center text-[18px] text-[#333333] "
+              style={{ margin: 0 }}
+            >
+              {experience.company_name}
+            </p>
+          </div>
+          <p
+            className="pl-[30px] py-3 flex items-center text-[18px] text-[#333333]"
+            style={{ margin: 0 }}
           >
-            {point}
-          </li>
-        ))}
-      </ul>
-    </div></div>
+            {`${experience.date}`}
+          </p>
+        </div>
+      </div>
   );
 };

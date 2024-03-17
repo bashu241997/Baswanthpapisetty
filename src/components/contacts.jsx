@@ -98,7 +98,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="xl:flex-1 xl:h-auto h-[300px]">
+        <div className="xl:flex-1 lg:h-[450px] h-[300px]">
           <div class="gmap_canvas">
             <iframe
               title="gmaps"
