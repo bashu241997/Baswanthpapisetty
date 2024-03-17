@@ -6,7 +6,6 @@ import chat from "../assets/chat_app.png"
 import Doctor from "../assets/doct.png"
 import Basicer from "../assets/bas.png"
 import { ProjectCard } from "../common/ProjectCard";
-import { FadeInWhenVisible } from "../common/fadein";
 
 const SkillContainer = () => {
 
@@ -17,15 +16,15 @@ const SkillContainer = () => {
   return (
     <div id="SkillContainer" className="min-h-[70vh] pt-[30px] pb-[40px]" >
       <div variants={textVariant()}>
-      <FadeInWhenVisible timing={1}>  <p className={`${styles.sectionSubText} `}>My Skills</p></FadeInWhenVisible> 
+      <div timing={1}>  <p className={`${styles.sectionSubText} `}>My Skills</p></div> 
       </div>
     
-      <FadeInWhenVisible timing={1.5}><h2 className={`${styles.sectionHeadText}`}>Tech Stack and Skills.</h2></FadeInWhenVisible> 
+      <div timing={1.5}><h2 className={`${styles.sectionHeadText}`}>Tech Stack and Skills.</h2></div> 
 
       <div className='p-6 grid grid-cols-2 sm:grid-cols-4 gap-6'>
         {Skillser.map((project, index) => (
             <div
-            className="bg-exp-pattern border border-[#307ae1] text-[#dcdcdc]  p-[30px] text-center uppercase  shadow-lg rounded-[10px] scale-90 duration-300 hover:scale-100 w-full"
+            className="bg-exp-pattern border border-[#307ae1] text-[#333333]  p-[30px] text-center uppercase  shadow-lg rounded-[10px] scale-90 duration-300 hover:scale-100 w-full"
           >{project}</div>
         ))}
       </div>

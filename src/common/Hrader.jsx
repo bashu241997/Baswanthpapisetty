@@ -4,7 +4,7 @@ const Hrader = () => {
   return (
     <header className="relative w-full p-[25px] overflow-hidden">
       <div className="flex flex-col sm:flex-row justify-between items-center">
-        <div className="flex mt-4 items-baseline font-black text-[#94a3b8]  ">
+        <div className="flex mt-4 items-baseline font-black text-[#626262]  ">
           <span className="text-[#307ae1] lg:text-[24px] sm:text-[24px] xs:text-[24px] text-[24px] italic">
             Bas
           </span>

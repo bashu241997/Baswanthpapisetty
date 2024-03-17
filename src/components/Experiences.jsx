@@ -6,7 +6,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { ExperienceCard } from '../common/ExpCard';
 import { styles,textVariant } from '../styles';
 
-import { FadeInWhenVisible } from "../common/fadein";
 const Experiences = () => {
     const experiences = [
         {
@@ -53,12 +52,12 @@ const Experiences = () => {
   return (
     <div id='experience' className='min-h-[100vh] pb-[30px]'>
           <div variants={textVariant()}>
-          <FadeInWhenVisible timing={2}>  <p className={`${styles.sectionSubText} text-center`}>
+          <div timing={2}>  <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far & My
-        </p> </FadeInWhenVisible>
-      <FadeInWhenVisible timing={1}>  <h2 className={`${styles.sectionHeadText} text-center`}>
+        </p> </div>
+      <div timing={1}>  <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience.
-        </h2></FadeInWhenVisible>
+        </h2></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20">

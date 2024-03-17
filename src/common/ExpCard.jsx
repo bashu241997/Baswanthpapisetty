@@ -1,14 +1,14 @@
-import { FadeInWhenVisible } from "./fadein";
+
 export const ExperienceCard = ({ experience,time }) => {
   return (
-    <FadeInWhenVisible timing={time}>
-    <div className="bg-exp-pattern border border-[#307ae1] p-4 text-[#dcdcdc] rounded-[5px] p-[30px]">
+    <div timing={time}>
+    <div className="bg-exp-pattern p-4 text-[#333333] rounded-[5px] p-[30px]">
       <div>
         <h3 className="text-[20px]  mb-3 font-bold">
           {experience.title} 
         </h3>
         <p
-          className="flex items-center text-[18px] text-[#dcdcdc] font-semibold"
+          className="flex items-center text-[18px] text-[#333333] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name} {` - ${experience.date}`}
@@ -19,12 +19,12 @@ export const ExperienceCard = ({ experience,time }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-[#dcdcdc] text-[14px] pl-1 tracking-wider"
+            className="text-[#333333] text-[14px] pl-1 tracking-wider"
           >
             {point}
           </li>
         ))}
       </ul>
-    </div></FadeInWhenVisible>
+    </div></div>
   );
 };

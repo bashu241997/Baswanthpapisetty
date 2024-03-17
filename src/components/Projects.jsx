@@ -6,7 +6,6 @@ import chat from "../assets/chat_app.png"
 import Doctor from "../assets/doct.png"
 import Basicer from "../assets/bas.png"
 import { ProjectCard } from "../common/ProjectCard";
-import { FadeInWhenVisible } from "../common/fadein";
 
 const projects = () => {
 
@@ -143,23 +142,23 @@ const projects = () => {
   return (
     <div id="projects" className="min-h-[70vh] pt-[30px] pb-[40px]" >
       <div variants={textVariant()}>
-      <FadeInWhenVisible timing={1}>  <p className={`${styles.sectionSubText} `}>My work</p></FadeInWhenVisible>
-      <FadeInWhenVisible timing={1.5}><h2 className={`${styles.sectionHeadText}`}>Projects.</h2></FadeInWhenVisible> 
+      <div timing={1}>  <p className={`${styles.sectionSubText} `}>My work</p></div>
+      <div timing={1.5}><h2 className={`${styles.sectionHeadText}`}>Projects.</h2></div> 
       </div>
-      <FadeInWhenVisible timing={1}> <div className="w-full flex">
+      <div timing={1}> <div className="w-full flex">
         <p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-[#94a3b8] text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-[#626262] text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
           links to code repositories and live demos in it.
         </p>
-      </div></FadeInWhenVisible>
+      </div></div>
 
       <div className='mt-20 p-4 flex gap-6 overflow-x-scroll flex-col sm:flex-row'>
         {projects.map((project, index) => (
-         <FadeInWhenVisible timing={1}> <ProjectCard key={`project-${index}`} index={index} {...project} /></FadeInWhenVisible>
+         <div timing={1}> <ProjectCard key={`project-${index}`} index={index} {...project} /></div>
         ))}
       </div>
     </div>

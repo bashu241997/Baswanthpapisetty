@@ -1,9 +1,8 @@
 import React from "react";
 import { styles, fadeIn, slideIn } from "../styles";
-import { FadeInWhenVisible } from "../common/fadein";
 
 const ServiceCard = ({ index, title,Icon, classgiven,sub }) => (
-  <FadeInWhenVisible timing={index + 1}>
+  <div timing={index + 1}>
     <div className={`my-4 sm:mx-4 w-[300px] h-[150px] overflow-hidden cursor-pointer rounded-[20px] scale-100 duration-300 hover:scale-110 shadow-lg ${classgiven} `}>
         <div
           className="group bg-tertiary rounded-[20px] py-5 px-12 min-h-[150px] flex justify-evenly items-center flex-col"
@@ -15,7 +14,7 @@ const ServiceCard = ({ index, title,Icon, classgiven,sub }) => (
           </h3>
         </div>
     </div>
-  </FadeInWhenVisible>
+  </div>
 );
 export const Skills = () => {
   const services = [
@@ -51,9 +50,9 @@ export const Skills = () => {
         <p className={`${styles.sectionSubText} text-center`}>
           My Technical strengths & my
         </p>
-        <FadeInWhenVisible timing={1}>
+        <div timing={1}>
           <h2 className={`${styles.sectionHeadText} text-center`}>Services.</h2>
-        </FadeInWhenVisible>
+        </div>
       </div>
 
       <div className="sm:px-4 flex flex-col sm:flex-row justify-between ">

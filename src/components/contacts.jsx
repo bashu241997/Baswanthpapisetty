@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import { styles, slideIn } from "../styles";
 
-import { FadeInWhenVisible } from "../common/fadein";
-import { SlideInWhenVisible } from "../common/slidein";
 
 const Contact = () => {
   const formRef = useRef();
@@ -45,39 +43,39 @@ const Contact = () => {
         className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >
         <div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
-        <FadeInWhenVisible timing={2} > <p className={styles.sectionSubText}>Get in touch</p></FadeInWhenVisible>
-          <FadeInWhenVisible timing={2} >  <h3 className={styles.sectionHeadText}>Contact.</h3></FadeInWhenVisible>
+        <div timing={2} > <p className={styles.sectionSubText}>Get in touch</p></div>
+          <div timing={2} >  <h3 className={styles.sectionHeadText}>Contact.</h3></div>
 
-          <FadeInWhenVisible timing={1} >
+          <div timing={1} >
             <form
               ref={formRef}
               onSubmit={handleSubmit}
               className="mt-12 flex flex-col gap-8"
             >
               <label className="flex flex-col">
-                <span className="text-[#94a3b8] font-medium mb-4">Your Name</span>
+                <span className="text-[#626262] font-medium mb-4">Your Name</span>
                 <input
                   type="text"
                   name="name"
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What's your good name?"
-                  className="bg-[#1e293b] py-4 px-6 placeholder:text-[#94a3b8] text-[#94a3b8] rounded-lg outline-none border-none font-medium"
+                  className="border dotted border-[#333] py-4 px-6 placeholder:text-[#626262] text-[#626262] rounded-lg outline-none  font-medium"
                 />
               </label>
               <label className="flex flex-col">
-                <span className="text-[#94a3b8] font-medium mb-4">Your email</span>
+                <span className="text-[#626262] font-medium mb-4">Your email</span>
                 <input
                   type="email"
                   name="email"
                   value={form.email}
                   onChange={handleChange}
                   placeholder="What's your web address?"
-                  className="bg-[#1e293b] py-4 px-6 placeholder:text-[#94a3b8] text-[#94a3b8] rounded-lg outline-none border-none font-medium"
+                  className="border dotted border-[#333] py-4 px-6 placeholder:text-[#626262] text-[#626262] rounded-lg outline-none  font-medium"
                 />
               </label>
               <label className="flex flex-col">
-                <span className="text-[#94a3b8] font-medium mb-4">
+                <span className="text-[#626262] font-medium mb-4">
                   Your Message
                 </span>
                 <textarea
@@ -86,7 +84,7 @@ const Contact = () => {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="What you want to say?"
-                  className="bg-[#1e293b] py-4 px-6 placeholder:text-[#94a3b8] text-[#94a3b8] rounded-lg outline-none border-none font-medium"
+                  className="border dotted border-[#333] py-4 px-6 placeholder:text-[#626262] text-[#626262] rounded-lg outline-none  font-medium"
                 />
               </label>
 
@@ -97,10 +95,10 @@ const Contact = () => {
                 {loading ? "Sending..." : "Send"}
               </button>
             </form>
-          </FadeInWhenVisible>
+          </div>
         </div>
 
-        <div className="xl:flex-1 xl:h-auto md:h-[350px] h-[300px]">
+        <div className="xl:flex-1 xl:h-auto h-[300px]">
           <div class="gmap_canvas">
             <iframe
               title="gmaps"
@@ -109,7 +107,7 @@ const Contact = () => {
               scrolling="no"
               marginheight="0"
               marginwidth="0"
-              src="https://maps.google.com/maps?width=500&amp;height=300&amp;hl=en&amp;q=Putta estate, MS Nagar, Parameshwari Nagar, Nellore&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=Putta estate, MS Nagar, Parameshwari Nagar, Nellore&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
           </div>
         </div>
