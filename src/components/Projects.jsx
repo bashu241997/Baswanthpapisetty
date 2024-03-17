@@ -1,10 +1,5 @@
 import React from "react";
 import { styles, fadeIn, textVariant } from "../styles";
-import Disney from "../assets/disney_clone.png"
-import Weather from "../assets/Next.png"
-import chat from "../assets/chat_app.png"
-import Doctor from "../assets/doct.png"
-import Basicer from "../assets/bas.png"
 import { ProjectCard } from "../common/ProjectCard";
 
 const projects = () => {
@@ -33,7 +28,6 @@ const projects = () => {
             color: "text-green-600",
           },
         ],
-        image: Doctor,
         source_code_link: "https://github.com/bashu241997/HMS",
         domain:"https://hospitalmanagementsystemsproject.vercel.app/overview"
       },
@@ -56,7 +50,6 @@ const projects = () => {
               color: "text-red-600",
             },
           ],
-          image: Weather,
           source_code_link: "https://github.com/bashu241997/improved-weather",
           domain:"https://improved-weather.vercel.app/"
         },
@@ -85,7 +78,6 @@ const projects = () => {
                 color: "text-green-600",
               },
           ],
-          image: chat,
           source_code_link: "https://github.com/bashu241997/private-cht",
           domain:"https://clonedwebsites.web.app/login"
         },
@@ -111,7 +103,6 @@ const projects = () => {
                 color: "text-red-600",
               }
           ],
-          image: Disney,
           source_code_link: "https://github.com/bashu241997/Disney-clone",
           domain:"https://clonedwebsites.web.app/login"
         },
@@ -133,7 +124,6 @@ const projects = () => {
               color: "text-red-600",
             }
           ],
-          image: Basicer,
           source_code_link: "https://github.com/bashu241997/javascriptprojects",
           domain:"https://samplejavascriptexampleapps.web.app/"
         },
