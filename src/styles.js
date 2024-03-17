@@ -4,7 +4,7 @@ const styles = {
     padding: "sm:px-16 px-6 sm:py-16 py-10",
   
     heroHeadText:
-      "font-black text-[#626262] lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
+      "font-black text-[#626262] lg:text-[60px] sm:text-[50px] text-[40px] lg:leading-[98px] mt-2",
     heroSubText:
       " font-medium capitalize text-[#626262] m lg:text-[20px] sm:text-[26px] xs:text-[16px] text-[16px] lg:leading-[40px]",
       heroSub2Text:
