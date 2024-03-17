@@ -20,13 +20,13 @@ const Home = () => {
             <div className="mt-5 pt-[10px]">
               <a
                 href="#projects"
-                className="scale-90 duration-300 hover:scale-100  uppercase py-2 px-6 bg-[#307ae1] text-[#ffffff] font-bold rounded-[30px] mr-2 border border-[#307ae1]"
+                className="scale-90 duration-300 hover:scale-100  uppercase py-2 px-6 bg-[#350f0e] text-[#ffffff] font-bold rounded-[30px] mr-2 border border-[#350f0e]"
               >
                 projects
               </a>
               <a
                 href="#contact"
-                className="scale-90 duration-300 hover:scale-100 uppercase py-2 px-6 text-[#307ae1] font-bold rounded-[30px] border border-[#307ae1]"
+                className="scale-90 duration-300 hover:scale-100 uppercase py-2 px-6 text-[#350f0e] font-bold rounded-[30px] border border-[#350f0e]"
               >
                 contact
               </a>
@@ -35,7 +35,7 @@ const Home = () => {
 
         <div className=" w-full flex justify-center items-center">
           <a href="#about">
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#307ae1] flex justify-center items-start p-2">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#350f0e] flex justify-center items-start p-2">
               <motion.div
                 animate={{
                   y: [0, 24, 0],
@@ -45,7 +45,7 @@ const Home = () => {
                   repeat: Infinity,
                   repeatType: "loop",
                 }}
-                className="w-3 h-3 rounded-full bg-[#307ae1] mb-1"
+                className="w-3 h-3 rounded-full bg-[#350f0e] mb-1"
               />
             </div>
           </a>

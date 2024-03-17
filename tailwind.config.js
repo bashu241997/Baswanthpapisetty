@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         white: "#F4F4F4",
-        primary:"#307ae1"
+        primary:"#350f0e"
       },
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",

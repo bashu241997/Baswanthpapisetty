@@ -60,7 +60,7 @@ const Contact = () => {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What's your good name?"
-                  className="border dotted border-[#333] py-4 px-6 placeholder:text-[#626262] text-[#626262] rounded-lg outline-none  font-medium"
+                  className="border dotted border-[#ccc] py-4 px-6 placeholder:text-[#626262] text-[#626262] rounded-lg outline-none  font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -71,7 +71,7 @@ const Contact = () => {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="What's your web address?"
-                  className="border dotted border-[#333] py-4 px-6 placeholder:text-[#626262] text-[#626262] rounded-lg outline-none  font-medium"
+                  className="border dotted border-[#ccc] py-4 px-6 placeholder:text-[#626262] text-[#626262] rounded-lg outline-none  font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -84,13 +84,13 @@ const Contact = () => {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="What you want to say?"
-                  className="border dotted border-[#333] py-4 px-6 placeholder:text-[#626262] text-[#626262] rounded-lg outline-none  font-medium"
+                  className="border dotted border-[#ccc] py-4 px-6 placeholder:text-[#626262] text-[#626262] rounded-lg outline-none  font-medium"
                 />
               </label>
 
               <button
                 type="submit"
-                className="bg-[#0057d1bd] py-3 px-8 rounded-xl outline-none w-fit text-[#e8e8e8] font-bold hover:bg-slate-700"
+                className="bg-[#350f0e] py-3 px-8 rounded-xl outline-none w-fit text-[#e8e8e8] font-bold hover:bg-slate-700"
               >
                 {loading ? "Sending..." : "Send"}
               </button>

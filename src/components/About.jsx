@@ -29,7 +29,7 @@ const About = () => {
 
           <a
             href="#experience"
-            className="block uppercase w-[200px] text-center mt-[30px] py-2 px-4 bg-[#307ae1] text-[#ffffff] font-bold rounded-[30px] mr-2 border-2  border-[#307ae1]"
+            className="block uppercase w-[200px] text-center mt-[30px] py-2 px-4 bg-[#350f0e] text-[#ffffff] font-bold rounded-[30px] mr-2 border-2  border-[#350f0e]"
           >
             experience
           </a>
