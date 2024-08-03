@@ -2,14 +2,11 @@ import React from "react";
 import { Globe, Linkedin, Insta, Git } from "../assets/icons";
 const Hrader = () => {
   return (
-    <header className="relative w-full p-[45px] overflow-hidden">
+    <header className="relative w-full overflow-hidden">
       <div className="flex flex-col sm:flex-row justify-between items-center">
-        <div className="flex mt-4 items-baseline font-black text-[#626262]  ">
-          <span className="text-[#350f0e] lg:text-[24px] sm:text-[24px] xs:text-[24px] text-[24px] italic">
-            Bas
-          </span>
-          <span className="lg:text-[20px] sm:text-[20px] xs:text-[18px] text-[18px]">
-            wanth
+        <div className="flex mt-4 items-baseline font-black text-[#364056]  ">
+          <span className="text-[#0058dd] lg:text-[24px] sm:text-[24px] xs:text-[24px] text-[24px] italic">
+          🧔‍♂️ Baswanth
           </span>
         </div>
         <div className="flex mt-4 justify-end items-center">

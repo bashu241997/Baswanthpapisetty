@@ -50,17 +50,17 @@ const Experiences = () => {
       ];
       
   return (
-    <div id='experience' className='min-h-[100vh] py-8'>
+    <div id='experience' className=' py-8'>
           <div variants={textVariant()}>
           <div timing={2}>  <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far & My
         </p> </div>
       <div timing={1}>  <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+      💼 Work Experience.
         </h2></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
  
           {experiences.map((experience, index) => (
             <ExperienceCard

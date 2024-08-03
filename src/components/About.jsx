@@ -16,20 +16,20 @@ const About = () => {
             </div>
 
             <div timing={1}>
-              <h2 className={styles.sectionHeadText}>Overview.</h2>
+              <h2 className={styles.sectionHeadText}>Overview 😀.</h2>
             </div>
           </div>
 
           <div timing={1}>
             {" "}
-            <p className="mt-[15px] text-[#626262] text-[17px] max-w-4xl leading-[30px]">
+            <p className="mt-[15px] text-[#364056] text-[17px] max-w-4xl leading-[30px]">
               {about}
             </p>
           </div>
 
           <a
             href="#experience"
-            className="block uppercase w-[200px] text-center mt-[30px] py-2 px-4 bg-[#350f0e] text-[#ffffff] font-bold rounded-[30px] mr-2 border-2  border-[#350f0e]"
+            className="block uppercase w-[200px] text-center mt-[30px] py-2 px-4 bg-[#0058dd] text-[#ffffff] font-bold rounded-[30px] mr-2 border-2  border-[#0058dd]"
           >
             experience
           </a>

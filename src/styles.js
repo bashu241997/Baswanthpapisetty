@@ -4,16 +4,16 @@ const styles = {
     padding: "sm:px-16 px-6 sm:py-16 py-10",
   
     heroHeadText:
-      "font-black text-[#626262] lg:text-[60px] sm:text-[50px] text-[40px] lg:leading-[98px] mt-2",
+      "font-black text-[#364056] lg:text-[60px] sm:text-[50px] text-[40px] lg:leading-[98px] mt-2",
     heroSubText:
-      " font-medium capitalize text-[#626262] m lg:text-[20px] sm:text-[26px] xs:text-[16px] text-[16px] lg:leading-[40px]",
+      " font-medium capitalize text-[#364056] m lg:text-[20px] sm:text-[26px] xs:text-[16px] text-[16px] lg:leading-[40px]",
       heroSub2Text:
-      " font-black capitalize text-[#626262] lg:text-[30px] sm:text-[30px] xs:text-[20px] text-[20px] lg:leading-[30px]",
+      " font-black capitalize text-[#364056] lg:text-[30px] sm:text-[30px] xs:text-[20px] text-[20px] lg:leading-[30px]",
   
     sectionHeadText:
-      "text-[#626262] font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+      "text-[#364056] font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
     sectionSubText:
-      "sm:text-[18px] text-[#626262]  text-[14px] text-secondary uppercase tracking-wider",
+      "sm:text-[18px] text-[#364056]  text-[14px] text-secondary uppercase tracking-wider",
   };
   
   export { styles };

@@ -130,15 +130,15 @@ const projects = () => {
       ];
 
   return (
-    <div id="projects" className="min-h-[70vh] pt-[30px] pb-[40px]" >
+    <div id="projects" className="py-[30px]" >
       <div variants={textVariant()}>
       <div timing={1}>  <p className={`${styles.sectionSubText} `}>My work</p></div>
-      <div timing={1.5}><h2 className={`${styles.sectionHeadText}`}>Projects.</h2></div> 
+      <div timing={1.5}><h2 className={`${styles.sectionHeadText}`}>🏆 Projects.</h2></div> 
       </div>
       <div timing={1}> <div className="w-full flex">
         <p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-[#626262] text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-[#364056] text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with

@@ -3,13 +3,13 @@ import { styles, fadeIn, slideIn } from "../styles";
 
 const ServiceCard = ({ index, title,Icon, classgiven,sub }) => (
   <div timing={index + 1}>
-    <div className={`my-4 sm:mx-4 w-[300px] h-[150px] overflow-hidden cursor-pointer rounded-[20px] scale-100 duration-300 hover:scale-110 shadow-lg ${classgiven} `}>
+    <div className={`border-[4px] border-dotted border-color-[#364056] my-4 sm:mx-4 w-[300px] h-[150px] overflow-hidden cursor-pointer rounded-[20px] scale-100 duration-300 hover:scale-110 shadow-sm `}>
         <div
           className="group bg-tertiary rounded-[20px] py-5 px-12 min-h-[150px] flex justify-evenly items-center flex-col"
         >
           <div className="translate-y-[10px] group-hover:translate-y-0 duration-300  ">{Icon()}</div>
           <div className="translate-y-[15px] group-hover:translate-y-0 duration-300  ">{sub}</div>
-          <h3 className="translate-y-[200px] group-hover:translate-y-0 duration-300 text-black text-[16px] font-semibold text-center">
+          <h3 className="translate-y-[200px] group-hover:translate-y-0 duration-300 text-black text-[14px] text-center">
             {title}
           </h3>
         </div>
@@ -45,13 +45,13 @@ export const Skills = () => {
   const one = `bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-300 via-blue-500 to-purple-600`;
   const two = `bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500`;
   return (
-    <div className="min-h-[80vh] flex flex-col items-center justify-center p-6">
+    <div className="min-h-[80vh] flex flex-col items-center justify-center px-6 py-4">
       <div variants={slideIn()}>
         <p className={`${styles.sectionSubText} text-center`}>
           My Technical strengths & my
         </p>
         <div timing={1}>
-          <h2 className={`${styles.sectionHeadText} text-center`}>Services.</h2>
+          <h2 className={`${styles.sectionHeadText} text-center`}>🧑‍💻 Services.</h2>
         </div>
       </div>
 
@@ -60,7 +60,6 @@ export const Skills = () => {
           <ServiceCard
             key={service.title}
             index={index}
-            classgiven={index % 2 == 0 ? one : two}
             {...service}
           />
         ))}
