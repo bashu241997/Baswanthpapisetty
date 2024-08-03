@@ -8,7 +8,7 @@ const Home = () => {
       <section
         className={`z-[10] container w-full flex flex-col items-center sm:items-start justify-around min-h-[80vh]`}
       >
-        <div className="flex w-full items-center justify-center">
+        <div className="flex w-full flex-col sm:flex-row items-center justify-center">
           <div className="md:pr-[50px]">
             <h1 className={` ${styles.heroSub2Text}`}>Hi 👋,</h1>
             <h1 className={` ${styles.heroHeadText}`}>I'm Baswanth p</h1>
@@ -35,7 +35,7 @@ const Home = () => {
           </div>
           <img
             src={require("../assets/profile1.jpg")}
-            className="w-[250px] sm:w-[300px] rounded-full"
+            className="w-[250px] sm:w-[300px] rounded-full m-[50px] sm:m-[0px]"
           />
         </div>
 
