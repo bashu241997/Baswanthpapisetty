@@ -5,11 +5,13 @@ import Routelayout from "../routes/RutLayout"
 
 const Layout = () => {
   return (
-    <div className="container min-h-screen flex flex-col justify-between mx-auto sm:px-6 px-4">
-    <Hrader />
-    <Routelayout />
-    <Footer />
-  </div>
+    <div className="min-h-screen flex flex-col">
+      <Hrader />
+      <main className="flex-1">
+        <Routelayout />
+      </main>
+      <Footer />
+    </div>
   )
 }
 

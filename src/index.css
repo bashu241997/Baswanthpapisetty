@@ -1,28 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, Ubuntu, 'Open Sans';
-
+:root {
+  --bg-primary: #0c0c14;
+  --bg-secondary: #111119;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --text-primary: #e4e4e7;
+  --text-secondary: #71717a;
+  --accent: #a78bfa;
+  --accent-2: #f0abfc;
+  --accent-gradient: linear-gradient(135deg, #a78bfa 0%, #f0abfc 100%);
+  --border: rgba(255, 255, 255, 0.06);
 }
-/* width */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
 ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 2px;
+}
+
+/* ===== Parallax ===== */
+.parallax-section {
+  will-change: transform;
+}
+
+/* ===== Background Orbs ===== */
+.floating-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  background: rgba(167, 139, 250, 0.08);
+  top: -150px;
+  right: -150px;
+  animation: floatOrb1 25s ease-in-out infinite;
+}
+
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  background: rgba(240, 171, 252, 0.06);
+  bottom: -100px;
+  left: -150px;
+  animation: floatOrb2 30s ease-in-out infinite;
+}
+
+.orb-3 {
+  width: 350px;
+  height: 350px;
+  background: rgba(167, 139, 250, 0.04);
+  top: 50%;
+  left: 30%;
+  animation: floatOrb3 20s ease-in-out infinite;
+}
+
+@keyframes floatOrb1 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
   }
 
-  #tsparticles{
+  50% {
+    transform: translate(-60px, 80px);
   }
- 
-  .particles-app{
-    z-index: -12;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
+}
+
+@keyframes floatOrb2 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
   }
-  html {
-    scroll-behavior: smooth;
+
+  50% {
+    transform: translate(50px, -60px);
+  }
+}
+
+@keyframes floatOrb3 {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-40px, 40px);
+  }
+}
+
+/* ===== Cards ===== */
+.dark-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.dark-card:hover {
+  border-color: rgba(167, 139, 250, 0.15);
+  box-shadow: 0 0 30px rgba(167, 139, 250, 0.06);
+  transform: translateY(-4px);
+}
+
+/* ===== Gradient Text ===== */
+.gradient-text {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background: var(--accent-gradient);
+  color: #0c0c14;
+  padding: 13px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(167, 139, 250, 0.25);
+}
+
+.btn-outline {
+  color: var(--text-secondary);
+  padding: 13px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 13px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ===== Divider ===== */
+.section-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--accent-gradient);
+  border-radius: 1px;
+  margin: 10px 0;
+}
+
+.section-divider-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Animated underline ===== */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--accent-gradient);
+  transition: width 0.3s;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* ===== Typing cursor ===== */
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  background: var(--accent);
+  animation: blink 0.8s step-end infinite;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ===== Skill Bar ===== */
+.skill-bar-bg {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  height: 4px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  background: var(--accent-gradient);
+}
+
+/* ===== Timeline ===== */
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  box-shadow: 0 0 15px rgba(167, 139, 250, 0.3);
+}
+
+/* ===== Stars ===== */
+.stars-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: var(--max-opacity);
+  }
+}
+
+/* ===== Grid lines ===== */
+.grid-lines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* ===== Section alt ===== */
+.section-alt {
+  background: var(--bg-secondary);
+}
+
+/* ===== Logo ===== */
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0c0c14;
+  font-weight: 800;
+  font-size: 13px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ===== Map ===== */
+.gmap_canvas,
+.gmap_iframe {
+  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 16px;
+}
+
+/* ===== Cursor glow ===== */
+.cursor-glow {
+  position: fixed;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s;
+}
+
+@media (max-width: 768px) {
+  .floating-orb {
+    opacity: 0.03;
+  }
+
+  .orb-3 {
+    display: none;
+  }
 }

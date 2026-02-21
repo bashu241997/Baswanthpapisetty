@@ -12,8 +12,9 @@ const RutLayout = () => {
       <Home />
       <About />
       <Experience />
-      <Projects />
       <Skills />
+      <SkillContainer />
+      <Projects />
       <Contact />
     </>
   );
