@@ -2,11 +2,11 @@ const styles = {
   paddingX: "sm:px-16 px-6",
   paddingY: "sm:py-16 py-6",
   padding: "sm:px-16 px-6 sm:py-16 py-10",
-  heroHeadText: "font-black text-[#e4e4e7] lg:text-[68px] sm:text-[52px] text-[40px] lg:leading-[80px] mt-2",
-  heroSubText: "font-medium text-[#71717a] lg:text-[17px] sm:text-[15px] text-[14px] lg:leading-[28px]",
-  heroSub2Text: "font-semibold text-[#71717a] lg:text-[20px] sm:text-[18px] text-[16px]",
-  sectionHeadText: "text-[#e4e4e7] font-extrabold md:text-[44px] sm:text-[36px] text-[28px] leading-tight",
-  sectionSubText: "sm:text-[13px] text-[12px] text-[#a78bfa] uppercase tracking-[4px] font-semibold",
+  heroHeadText: "font-black text-[#1e2229] lg:text-[68px] sm:text-[52px] text-[40px] lg:leading-[80px] mt-2",
+  heroSubText: "font-medium text-[#5e6675] lg:text-[17px] sm:text-[15px] text-[14px] lg:leading-[28px]",
+  heroSub2Text: "font-semibold text-[#5e6675] lg:text-[20px] sm:text-[18px] text-[16px]",
+  sectionHeadText: "text-[#1e2229] font-extrabold md:text-[44px] sm:text-[36px] text-[28px] leading-tight",
+  sectionSubText: "sm:text-[13px] text-[12px] text-[#2563eb] uppercase tracking-[4px] font-semibold",
 };
 
 export { styles };
