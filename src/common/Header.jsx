@@ -48,7 +48,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-3">
             {[
               { href: "https://github.com/bashu241997", Icon: Git },
-              { href: "https://www.linkedin.com/in/baswanth-papisetty-91340b9a/", Icon: Linkedin },
+              { href: "https://www.linkedin.com/in/baswanth-p/", Icon: Linkedin },
               { href: "https://bashu-53054.web.app/", Icon: Globe },
             ].map(({ href, Icon }, i) => (
               <a 
@@ -99,7 +99,7 @@ const Header = () => {
             <div className="flex gap-4 px-4 pt-4 border-t border-gray-200/80 mt-2">
               {[
                 { href: "https://github.com/bashu241997", Icon: Git },
-                { href: "https://www.linkedin.com/in/baswanth-papisetty-91340b9a/", Icon: Linkedin },
+                { href: "https://www.linkedin.com/in/baswanth-p/", Icon: Linkedin },
                 { href: "https://bashu-53054.web.app/", Icon: Globe },
               ].map(({ href, Icon }, i) => (
                 <a key={i} href={href} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-slate-900 transition-colors duration-200">

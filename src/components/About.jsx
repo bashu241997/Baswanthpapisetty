@@ -36,7 +36,7 @@ const About = () => {
                 View Work History →
               </a>
               <a 
-                href="https://www.linkedin.com/in/baswanth-papisetty-91340b9a/" 
+                href="https://www.linkedin.com/in/baswanth-p/" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="btn-outline"

@@ -28,7 +28,7 @@ const Footer = () => (
         <div className="flex items-center gap-3">
           {[
             { href: "https://github.com/bashu241997", Icon: Git },
-            { href: "https://www.linkedin.com/in/baswanth-papisetty-91340b9a/", Icon: Linkedin },
+            { href: "https://www.linkedin.com/in/baswanth-p/", Icon: Linkedin },
             { href: "https://bashu-53054.web.app/", Icon: Globe }
           ].map(({ href, Icon }, i) => (
             <a key={i} href={href} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-gray-200 flex items-center justify-center text-slate-500 hover:text-slate-900 hover:border-[#4a729f]/20 transition-all duration-200">

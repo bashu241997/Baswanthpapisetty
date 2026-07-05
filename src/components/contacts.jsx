@@ -24,7 +24,7 @@ const Contact = () => {
   const contactInfo = [
     { icon: "🌍", title: "Timezones", value: "GMT / BST / CET Compatible" },
     { icon: "📍", title: "Location", value: "Chennai, India (Remote Available)" },
-    { icon: "💼", title: "LinkedIn", value: "Connect on LinkedIn", href: "https://www.linkedin.com/in/baswanth-papisetty-91340b9a/" },
+    { icon: "💼", title: "LinkedIn", value: "Connect on LinkedIn", href: "https://www.linkedin.com/in/baswanth-p/" },
     { icon: "📧", title: "Email", value: "p.baslass@gmail.com", href: "mailto:p.baslass@gmail.com" },
   ];
 
