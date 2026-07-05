@@ -17,10 +17,10 @@ const Home = () => {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/5 border border-blue-500/10 mb-8"
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4a729f]/5 border border-[#4a729f]/10 mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="text-[11px] text-blue-600 font-bold uppercase tracking-wider">
+          <span className="text-[11px] text-[#4a729f] font-bold uppercase tracking-wider">
             Senior Software Engineer @ Walmart
           </span>
         </motion.div>

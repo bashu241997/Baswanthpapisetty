@@ -38,7 +38,7 @@ const Contact = () => {
           <h2 className={`${styles.sectionHeadText} mt-2`}>
             Contact <span className="gradient-text">Me</span>
           </h2>
-          <div className="h-[2px] w-12 bg-gradient-to-r from-[#3b82f6] to-[#0ea5e9] rounded-full mt-4 mx-auto" />
+          <div className="h-[2px] w-12 bg-[#3b82f6] rounded-full mt-4 mx-auto" />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 items-stretch">

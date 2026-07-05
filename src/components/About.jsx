@@ -22,7 +22,7 @@ const About = () => {
           <h2 className={`${styles.sectionHeadText} mt-2`}>
             About <span className="gradient-text">Me</span>
           </h2>
-          <div className="h-[2px] w-12 bg-gradient-to-r from-[#3b82f6] to-[#0ea5e9] rounded-full mt-4 mx-auto lg:mx-0" />
+          <div className="h-[2px] w-12 bg-[#4a729f] rounded-full mt-4 mx-auto lg:mx-0" />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-start">
@@ -56,10 +56,10 @@ const About = () => {
                 className="dark-card p-5 group flex flex-col justify-between min-h-[160px]"
               >
                 <div className="flex justify-between items-start mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-blue-500/5 border border-blue-500/10 flex items-center justify-center text-xl">
+                  <div className="w-10 h-10 rounded-xl bg-[#4a729f]/5 border border-[#4a729f]/10 flex items-center justify-center text-xl">
                     {item.icon}
                   </div>
-                  <span className="text-[11px] font-bold text-blue-600 font-mono bg-blue-500/10 px-2.5 py-0.5 rounded-full">
+                  <span className="text-[11px] font-bold text-[#4a729f] font-mono bg-[#4a729f]/10 px-2.5 py-0.5 rounded-full">
                     {item.metric}
                   </span>
                 </div>

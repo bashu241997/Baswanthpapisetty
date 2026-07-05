@@ -13,12 +13,12 @@ export const ExperienceCard = ({ experience }) => (
           {experience.icon ? (
             <img src={experience.icon} alt={experience.company_name} className="w-7 h-7 object-contain" />
           ) : (
-            <span className="text-[#3b82f6] font-black text-base">{experience.company_name[0]}</span>
+            <span className="text-[#4f73ec] font-black text-base">{experience.company_name[0]}</span>
           )}
         </div>
         <div>
           <h3 className="text-slate-900 text-[16px] font-bold leading-snug">{experience.title}</h3>
-          <p className="text-blue-600 font-semibold text-[13px] mt-0.5">{experience.company_name}</p>
+          <p className="text-[#4f73ec] font-semibold text-[13px] mt-0.5">{experience.company_name}</p>
         </div>
       </div>
       
@@ -32,7 +32,7 @@ export const ExperienceCard = ({ experience }) => (
     <ul className="space-y-3">
       {experience.points.map((point, i) => (
         <li key={i} className="flex items-start gap-2.5 text-[13px] text-slate-600 leading-relaxed">
-          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0 mt-1.5 shadow-sm shadow-blue-500/20" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#4f73ec] flex-shrink-0 mt-1.5 shadow-sm shadow-[#4f73ec]/20" />
           <span>{point}</span>
         </li>
       ))}

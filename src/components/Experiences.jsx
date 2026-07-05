@@ -12,7 +12,7 @@ const Experiences = () => {
       title: "Software Engineer III",
       company_name: "Walmart",
       icon: Wal,
-      iconBg: "rgba(59, 130, 246, 0.08)",
+      iconBg: "rgba(79, 115, 236, 0.08)",
       date: "April 2023 – Present",
       points: [
         "Architected a complex, client-heavy React application specializing in dynamic form generation, WYSIWYG editors, and custom JSON schemas.",
@@ -26,7 +26,7 @@ const Experiences = () => {
       title: "Senior Software Engineer",
       company_name: "Accenture (Client: AT&T)",
       icon: Acc,
-      iconBg: "rgba(99, 102, 241, 0.08)",
+      iconBg: "rgba(79, 115, 236, 0.08)",
       date: "August 2021 – March 2023",
       points: [
         "Architected the full end-to-end flow of the AT&T 'Bring Your Own Device' (BYOD) feature on the web portal.",
@@ -40,7 +40,7 @@ const Experiences = () => {
       title: "Systems Engineer",
       company_name: "Tata Consultancy Services",
       icon: Tcs,
-      iconBg: "rgba(59, 130, 246, 0.05)",
+      iconBg: "rgba(79, 115, 236, 0.05)",
       date: "November 2018 – July 2021",
       points: [
         "Developed cross-platform hybrid mobile applications for global travel domains using React Native.",
@@ -62,7 +62,7 @@ const Experiences = () => {
           <h2 className={`${styles.sectionHeadText} mt-2`}>
             Professional <span className="gradient-text">Experience</span>
           </h2>
-          <div className="h-[2px] w-12 bg-gradient-to-r from-[#3b82f6] to-[#0ea5e9] rounded-full mt-4 mx-auto" />
+          <div className="h-[2px] w-12 bg-[#4f73ec] rounded-full mt-4 mx-auto" />
         </div>
 
         {/* Timeline container */}
@@ -79,7 +79,7 @@ const Experiences = () => {
               >
                 {/* Timeline node */}
                 <div className="absolute -left-[31px] sm:-left-[39px] top-1.5 z-20">
-                  <div className="w-2.5 h-2.5 rounded-full bg-blue-500 ring-4 ring-[#faf8f5] shadow-lg shadow-blue-500/25" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#4f73ec] ring-4 ring-[#faf8f5] shadow-lg shadow-[#4f73ec]/25" />
                 </div>
                 
                 {/* Experience Card */}

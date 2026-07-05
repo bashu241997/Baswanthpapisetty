@@ -9,7 +9,7 @@ export const ProjectCard = ({ name, description, tags, source_code_link, domain 
     className="dark-card overflow-hidden group h-full flex flex-col w-full bg-white"
   >
     {/* Card Accent Top Line */}
-    <div className="h-[2px] w-full bg-gradient-to-r from-[#3b82f6] via-[#0ea5e9] to-[#3b82f6] opacity-40 group-hover:opacity-100 transition-opacity duration-300" />
+    <div className="h-[2px] w-full bg-blue-500 opacity-40 group-hover:opacity-100 transition-opacity duration-300" />
     
     <div className="p-6 flex flex-col flex-1">
       {/* Card Header Actions */}
