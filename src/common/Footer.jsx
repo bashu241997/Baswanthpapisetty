@@ -40,7 +40,7 @@ const Footer = () => (
       <div className="h-px bg-gray-200" />
       <div className="flex flex-col sm:flex-row justify-between items-center gap-3 pt-6">
         <p className="text-[11px] text-gray-500">© {new Date().getFullYear()} Baswanth Papisetty. All rights reserved.</p>
-        <p className="text-[10px] text-gray-400">Built with React, Tailwind & Framer Motion</p>
+        {/* <p className="text-[10px] text-gray-400">Built with React, Tailwind & Framer Motion</p> */}
       </div>
     </div>
   </footer>
