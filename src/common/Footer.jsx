@@ -16,7 +16,7 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-6">
         <div className="flex items-center gap-2">
           <div className="logo-mark text-[13px]">BP</div>
-          <span className="font-bold text-[14px] text-slate-900">Baswanth<span className="text-[#3b82f6]">.</span></span>
+          <span className="font-bold text-[14px] text-slate-900">Baswanth<span className="text-[#4a729f]">.</span></span>
         </div>
         <nav className="flex flex-wrap justify-center gap-6">
           {navLinks.map((l) => (
@@ -31,7 +31,7 @@ const Footer = () => (
             { href: "https://www.linkedin.com/in/baswanth-papisetty-91340b9a/", Icon: Linkedin },
             { href: "https://bashu-53054.web.app/", Icon: Globe }
           ].map(({ href, Icon }, i) => (
-            <a key={i} href={href} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-gray-200 flex items-center justify-center text-slate-500 hover:text-slate-900 hover:border-[#3b82f6]/20 transition-all duration-200">
+            <a key={i} href={href} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg border border-gray-200 flex items-center justify-center text-slate-500 hover:text-slate-900 hover:border-[#4a729f]/20 transition-all duration-200">
               <Icon className="w-4 h-4" />
             </a>
           ))}

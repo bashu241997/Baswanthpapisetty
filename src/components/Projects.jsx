@@ -8,28 +8,28 @@ const Projects = () => {
     {
       name: "Hospital Management App", 
       description: "A comprehensive patient and doctor coordination system featuring scheduling workflows, medical record history, and communication channels.",
-      tags: [{ name: "React", color: "text-[#0e7490]" }, { name: "Next.js", color: "text-gray-600" }, { name: "TypeScript", color: "text-cyan-600" }],
+      tags: [{ name: "React", color: "text-[#4a729f]" }, { name: "Next.js", color: "text-gray-600" }, { name: "TypeScript", color: "text-cyan-600" }],
       source_code_link: "https://github.com/bashu241997/HMS", 
       domain: "https://hospitalmanagementsystemsproject.vercel.app/overview"
     },
     {
       name: "Whisper Hub", 
       description: "Real-time chat platform supporting direct messaging, channel creation, file sharing, and automated presence/typing indicators.",
-      tags: [{ name: "React", color: "text-[#0e7490]" }, { name: "Socket.io", color: "text-emerald-600" }, { name: "Node.js", color: "text-indigo-600" }],
+      tags: [{ name: "React", color: "text-[#4a729f]" }, { name: "Socket.io", color: "text-emerald-600" }, { name: "Node.js", color: "text-indigo-600" }],
       source_code_link: "https://github.com/bashu241997/private-cht", 
       domain: "https://clonedwebsites.web.app/login"
     },
     {
       name: "Magic Kingdom", 
       description: "A clean UI streaming site clone styled for high visual engagement and optimized media load configurations.",
-      tags: [{ name: "Next.js", color: "text-gray-600" }, { name: "React", color: "text-[#0e7490]" }, { name: "Tailwind CSS", color: "text-cyan-600" }],
+      tags: [{ name: "Next.js", color: "text-gray-600" }, { name: "React", color: "text-[#4a729f]" }, { name: "Tailwind CSS", color: "text-cyan-600" }],
       source_code_link: "https://github.com/bashu241997/Disney-clone", 
       domain: "https://clonedwebsites.web.app/login"
     },
     {
       name: "Weather Dashboard", 
       description: "Real-time atmospheric condition tracking system with location mapping, hourly predictions, and responsive dynamic background styles.",
-      tags: [{ name: "React", color: "text-[#0e7490]" }, { name: "TypeScript", color: "text-cyan-600" }, { name: "OpenWeather API", color: "text-amber-600" }],
+      tags: [{ name: "React", color: "text-[#4a729f]" }, { name: "TypeScript", color: "text-cyan-600" }, { name: "OpenWeather API", color: "text-amber-600" }],
       source_code_link: "https://github.com/bashu241997/improved-weather", 
       domain: "https://improved-weather.vercel.app/"
     },
@@ -52,7 +52,7 @@ const Projects = () => {
           <h2 className={`${styles.sectionHeadText} mt-2`}>
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <div className="h-[2px] w-12 bg-[#0e7490] rounded-full mt-4 mx-auto lg:mx-0" />
+          <div className="h-[2px] w-12 bg-[#4a729f] rounded-full mt-4 mx-auto lg:mx-0" />
           <p className="mt-4 text-slate-600 text-[14px] max-w-lg leading-relaxed mx-auto lg:mx-0">
             A selection of applications and codebases built using modern frontend frameworks and integrations.
           </p>

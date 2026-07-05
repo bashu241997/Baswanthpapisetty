@@ -38,7 +38,7 @@ const Contact = () => {
           <h2 className={`${styles.sectionHeadText} mt-2`}>
             Contact <span className="gradient-text">Me</span>
           </h2>
-          <div className="h-[2px] w-12 bg-[#3b82f6] rounded-full mt-4 mx-auto" />
+          <div className="h-[2px] w-12 bg-[#4a729f] rounded-full mt-4 mx-auto" />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 items-stretch">
@@ -58,7 +58,7 @@ const Contact = () => {
                         placeholder={f.placeholder} 
                         rows={5}
                         required
-                        className="w-full py-3 px-4 bg-gray-50 border border-gray-200 rounded-xl text-slate-900 placeholder:text-gray-400 outline-none focus:border-blue-500/40 focus:bg-white transition-all duration-300 text-[13px] resize-none" 
+                        className="w-full py-3 px-4 bg-gray-50 border border-gray-200 rounded-xl text-slate-900 placeholder:text-gray-400 outline-none focus:border-[#4a729f]/40 focus:bg-white transition-all duration-300 text-[13px] resize-none" 
                       />
                     ) : (
                       <input 
@@ -68,7 +68,7 @@ const Contact = () => {
                         onChange={handleChange} 
                         placeholder={f.placeholder}
                         required
-                        className="w-full py-3 px-4 bg-gray-50 border border-gray-200 rounded-xl text-slate-900 placeholder:text-gray-400 outline-none focus:border-blue-500/40 focus:bg-white transition-all duration-300 text-[13px]" 
+                        className="w-full py-3 px-4 bg-gray-50 border border-gray-200 rounded-xl text-slate-900 placeholder:text-gray-400 outline-none focus:border-[#4a729f]/40 focus:bg-white transition-all duration-300 text-[13px]" 
                       />
                     )}
                   </label>
@@ -93,7 +93,7 @@ const Contact = () => {
                 <div 
                   key={i}
                   onClick={() => item.href && window.open(item.href, item.href.startsWith("mailto") ? "_self" : "_blank")}
-                  className={`dark-card p-5 flex flex-col justify-between min-h-[110px] bg-white ${item.href ? "cursor-pointer hover:border-blue-500/20" : "cursor-default"}`}
+                  className={`dark-card p-5 flex flex-col justify-between min-h-[110px] bg-white ${item.href ? "cursor-pointer hover:border-[#4a729f]/20" : "cursor-default"}`}
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-xl">{item.icon}</span>

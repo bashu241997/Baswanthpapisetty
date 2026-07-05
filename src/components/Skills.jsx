@@ -11,12 +11,12 @@ const ServiceCard = ({ index, title, Icon, sub }) => (
     whileHover={{ y: -6 }}
     className="dark-card p-7 text-center group cursor-default"
   >
-    <div className="w-14 h-14 mx-auto mb-5 rounded-2xl bg-[#4f73ec]/5 border border-[#4f73ec]/10 flex items-center justify-center group-hover:bg-[#4f73ec]/10 transition-colors duration-300">
-      <div className="text-[#4f73ec] group-hover:scale-110 transition-transform duration-300">
+    <div className="w-14 h-14 mx-auto mb-5 rounded-2xl bg-[#4a729f]/5 border border-[#4a729f]/10 flex items-center justify-center group-hover:bg-[#4a729f]/10 transition-colors duration-300">
+      <div className="text-[#4a729f] group-hover:scale-110 transition-transform duration-300">
         {Icon()}
       </div>
     </div>
-    <div className="text-[11px] uppercase tracking-[3px] text-[#4f73ec] font-bold mb-2">
+    <div className="text-[11px] uppercase tracking-[3px] text-[#4a729f] font-bold mb-2">
       {sub}
     </div>
     <h3 className="text-slate-900 text-[14px] font-semibold leading-relaxed">
@@ -75,7 +75,7 @@ export const Skills = () => {
           <h2 className={`${styles.sectionHeadText} mt-2`}>
             Core <span className="gradient-text">Competencies</span>
           </h2>
-          <div className="h-[2px] w-12 bg-[#4f73ec] rounded-full mt-4 mx-auto" />
+          <div className="h-[2px] w-12 bg-[#4a729f] rounded-full mt-4 mx-auto" />
         </div>
 
         {/* Services Grid */}

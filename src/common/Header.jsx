@@ -27,7 +27,7 @@ const Header = () => {
           <a href="#homer" className="flex items-center gap-2.5 group">
             <div className="logo-mark">BP</div>
             <span className="font-bold text-[15px] text-slate-900 tracking-tight">
-              Baswanth<span className="text-[#3b82f6]">.</span>
+              Baswanth<span className="text-[#4a729f]">.</span>
             </span>
           </a>
 
@@ -56,14 +56,14 @@ const Header = () => {
                 href={href} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="w-8 h-8 rounded-lg border border-gray-200 flex items-center justify-center text-slate-500 hover:text-slate-900 hover:border-blue-500/30 hover:bg-blue-500/5 transition-all duration-200"
+                className="w-8 h-8 rounded-lg border border-gray-200 flex items-center justify-center text-slate-500 hover:text-slate-900 hover:border-[#4a729f]/30 hover:bg-[#4a729f]/5 transition-all duration-200"
               >
                 <Icon className="w-4 h-4" />
               </a>
             ))}
             <a 
               href="#contact" 
-              className="ml-2 px-4 py-1.5 rounded-lg bg-white border border-gray-200 hover:border-blue-500/30 hover:bg-blue-500/5 text-[12px] font-medium text-slate-700 hover:text-slate-900 transition-all duration-200"
+              className="ml-2 px-4 py-1.5 rounded-lg bg-white border border-gray-200 hover:border-[#4a729f]/30 hover:bg-[#4a729f]/5 text-[12px] font-medium text-slate-700 hover:text-slate-900 transition-all duration-200"
             >
               Contact
             </a>
