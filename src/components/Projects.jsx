@@ -6,39 +6,32 @@ import { ProjectCard } from "../common/ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      name: "Hospital Management App", 
-      description: "A comprehensive patient and doctor coordination system featuring scheduling workflows, medical record history, and communication channels.",
+      name: "Enterprise Patient & Clinician Portal", 
+      description: "A secure patient-doctor coordination application. Integrated dynamic forms, real-time schedule orchestration, and optimized client rendering workflows.",
       tags: [{ name: "React", color: "text-[#4a729f]" }, { name: "Next.js", color: "text-gray-600" }, { name: "TypeScript", color: "text-cyan-600" }],
       source_code_link: "https://github.com/bashu241997/HMS", 
       domain: "https://hospitalmanagementsystemsproject.vercel.app/overview"
     },
     {
-      name: "Whisper Hub", 
-      description: "Real-time chat platform supporting direct messaging, channel creation, file sharing, and automated presence/typing indicators.",
+      name: "Whisper Hub Messaging Engine", 
+      description: "A real-time messaging client built using a micro-frontend architecture. Implemented presence tracking, live channel sockets, and highly optimized script payloads.",
       tags: [{ name: "React", color: "text-[#4a729f]" }, { name: "Socket.io", color: "text-emerald-600" }, { name: "Node.js", color: "text-indigo-600" }],
       source_code_link: "https://github.com/bashu241997/private-cht", 
       domain: "https://clonedwebsites.web.app/login"
     },
     {
-      name: "Magic Kingdom", 
-      description: "A clean UI streaming site clone styled for high visual engagement and optimized media load configurations.",
+      name: "Magic Kingdom Streaming Client", 
+      description: "A responsive streaming portal clone optimized for asset load configurations, smooth rendering, and Core Web Vitals targets.",
       tags: [{ name: "Next.js", color: "text-gray-600" }, { name: "React", color: "text-[#4a729f]" }, { name: "Tailwind CSS", color: "text-cyan-600" }],
       source_code_link: "https://github.com/bashu241997/Disney-clone", 
       domain: "https://clonedwebsites.web.app/login"
     },
     {
-      name: "Weather Dashboard", 
-      description: "Real-time atmospheric condition tracking system with location mapping, hourly predictions, and responsive dynamic background styles.",
+      name: "Telemetry & Weather Dashboard", 
+      description: "Real-time weather tracking client featuring live charting, location geolocation matching, and responsive web performance configurations.",
       tags: [{ name: "React", color: "text-[#4a729f]" }, { name: "TypeScript", color: "text-cyan-600" }, { name: "OpenWeather API", color: "text-amber-600" }],
       source_code_link: "https://github.com/bashu241997/improved-weather", 
       domain: "https://improved-weather.vercel.app/"
-    },
-    {
-      name: "JavaScript Collection", 
-      description: "An organized index of functional mini utilities demonstrating core DOM operations, canvas logic, and REST consumption workflows.",
-      tags: [{ name: "JavaScript", color: "text-amber-600" }, { name: "HTML5 / CSS3", color: "text-orange-600" }],
-      source_code_link: "https://github.com/bashu241997/javascriptprojects", 
-      domain: "https://samplejavascriptexampleapps.web.app/"
     },
   ];
 
@@ -54,7 +47,7 @@ const Projects = () => {
           </h2>
           <div className="h-[2px] w-12 bg-[#4a729f] rounded-full mt-4 mx-auto lg:mx-0" />
           <p className="mt-4 text-slate-600 text-[14px] max-w-lg leading-relaxed mx-auto lg:mx-0">
-            A selection of applications and codebases built using modern frontend frameworks and integrations.
+            A selection of SaaS products, web applications, and side-projects demonstrating modern frontend architecture and clean code.
           </p>
         </div>
 

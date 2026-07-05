@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   const stats = [
-    { num: "7+", label: "Years Exp" },
-    { num: "50+", label: "Apps Delivered" },
+    { num: "7+ Years", label: "Years Exp" },
+    { num: "190ms", label: "P95 INP Optimized" },
     { num: "3", label: "Fortune 500s" }
   ];
 
   return (
     <section id="homer" className="min-h-screen flex items-center pt-32 pb-20 overflow-hidden relative">
       <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        
-        {/* Top Badge: Role */}
+
+        {/* Top Badge: Role & Passion */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-slate-900 font-black text-[44px] sm:text-[60px] lg:text-[72px] leading-[1.1] tracking-tight mb-4"
         >
-          Hi, I'm <span className="gradient-text">Baswanth</span>
+          Baswanth <span className="gradient-text">Papisetty</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -42,7 +42,7 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-[20px] sm:text-[28px] font-bold text-slate-700 tracking-tight mb-6"
         >
-          Senior Full Stack & Frontend Architect
+          Senior Software Engineer & SaaS Builder
         </motion.h2>
 
         {/* Description */}
@@ -52,10 +52,10 @@ const Home = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-[16px] sm:text-[17px] text-slate-600 leading-relaxed max-w-2xl mx-auto mb-10"
         >
-          Specializing in micro-frontends, UI orchestration, and performance optimization. 
-          Proven track record of scaling enterprise applications and improving user response metrics 
-          at <span className="text-slate-900 font-semibold">Walmart</span>, 
-          <span className="text-slate-900 font-semibold"> Accenture</span>, and 
+          Building robust enterprise systems by day and shipping modern web applications and SaaS products by night.
+          Focused on micro-frontend architectures, developer tooling, and Core Web Vitals optimization.
+          Proven delivery at <span className="text-slate-900 font-semibold">Walmart</span>,
+          <span className="text-slate-900 font-semibold"> Accenture (AT&T)</span>, and
           <span className="text-slate-900 font-semibold"> TCS</span>.
         </motion.p>
 
@@ -67,7 +67,7 @@ const Home = () => {
           className="flex flex-wrap gap-4 justify-center mb-16"
         >
           <a href="#projects" className="btn-primary">
-            Explore Projects
+            Explore Side Projects
           </a>
           <a href="#contact" className="btn-outline">
             Get In Touch

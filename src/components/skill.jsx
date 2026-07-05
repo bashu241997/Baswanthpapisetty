@@ -31,16 +31,16 @@ const SkillGroup = ({ title, skills, index }) => (
 const SkillContainer = () => {
   const categories = [
     { 
-      title: "Frontend Engineering", 
-      skills: ["React / Next.js", "TypeScript", "Angular", "JavaScript (ES6+)", "HTML5 / CSS3", "React Native", "Redux / Redux Saga", "RxJS"] 
+      title: "Frontend Architecture", 
+      skills: ["React / Next.js", "TypeScript", "Angular", "Micro-Frontends (Bit/NX)", "State Orchestration (Redux/RxJS)", "React Native", "Tailwind CSS & SCSS"] 
     },
     { 
-      title: "Backend & Cloud", 
-      skills: ["Node.js / Express", "Java / Spring Boot", "GraphQL / REST APIs", "Fastify", "SQL / PostgreSQL", "Redis / MongoDB", "Firebase", "Sanity.io"] 
+      title: "Systems, Cloud & APIs", 
+      skills: ["Node.js / Express", "Java / Spring Boot", "GraphQL & REST APIs", "Fastify (High-Speed)", "SQL / PostgreSQL / Redis", "Azure (AZ-900)", "Firebase / Headless CMS"] 
     },
     { 
-      title: "DevOps, QA & Tooling", 
-      skills: ["Jest / Mocha / Chai", "Cypress / TestCafe", "Azure (AZ-900)", "CI/CD Pipelines", "Docker", "NX Mono Repo", "Bit.dev", "Webpack / Vite", "Storybook", "Figma"] 
+      title: "Standards, Quality & Audits", 
+      skills: ["WCAG 2.1 AA Accessibility", "Core Web Vitals Auditing", "Performance Budgeting", "Jest / Cypress / TestCafe", "CI/CD Pipelines", "Docker", "Storybook / Figma"] 
     },
   ];
 
@@ -56,9 +56,9 @@ const SkillContainer = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className={`${styles.sectionSubText}`}>My Proficiencies</p>
+          <p className={`${styles.sectionSubText}`}>Expertise Matrix</p>
           <h2 className={`${styles.sectionHeadText} mt-2`}>
-            Tech Stack & <span className="gradient-text">Skills</span>
+            Engineering Standards & <span className="gradient-text">Skills</span>
           </h2>
           <div className="h-[2px] w-12 bg-[#4a729f] rounded-full mt-4 mx-auto" />
         </motion.div>

@@ -3,13 +3,13 @@ import { styles } from "../styles";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const aboutText = `I am a Senior Full Stack Web Developer with 7 years of professional experience designing, building, and deploying enterprise-grade web applications. My expertise spans Next.js, React, Angular, and Node.js, with hands-on exposure to Java, Spring Boot, and cloud environments. Throughout my career, I have focused on innovating high-impact solutions for e-commerce, retail, and travel & hospitality domains, with a strong focus on web performance metrics, micro-frontend architecture, and developer productivity.`;
+  const aboutText = `I am a Senior Software Engineer with 7 years of professional experience designing, building, and deploying enterprise-grade web applications. Alongside my professional role, I have a passion for launching SaaS projects and side-applications. My core expertise spans Next.js, React, Angular, and Node.js. Throughout my career, I have focused on building high-performance frontend solutions, optimizing web performance metrics, and creating tools that elevate developer velocity.`;
 
   const highlights = [
-    { icon: "🚀", title: "Performance Engineering", desc: "Reduced INP from 590ms to 190ms via P95 analysis for Walmart applications.", metric: "3x" },
-    { icon: "🏗️", title: "Micro-Frontends", desc: "Architected high-scale micro-frontends using Bit.dev in NX Monorepos.", metric: "10+ Apps" },
-    { icon: "⚡", title: "Development Speed", desc: "Created custom UI automation tools cutting feature delivery from 6 sprints to 1.5 sprints.", metric: "4x Speed" },
-    { icon: "🏆", title: "Excellence Award", desc: "Received the prestigious 'Accenture Celebrates Excellence' award for technical innovation.", metric: "1" },
+    { icon: "⚡", title: "Performance Engineering", desc: "Engineered client-side performance patterns to achieve a P95 INP of 190ms for Walmart's platforms.", metric: "190ms INP" },
+    { icon: "🏗️", title: "Micro-Frontend Systems", desc: "Architected federated module pipelines using Bit.dev and NX, scaling across distributed enterprise teams.", metric: "Scale" },
+    { icon: "🛠️", title: "Developer Velocity", desc: "Created custom dev CLI tools and UI orchestrators, reducing feature lead times from 6 to 1.5 sprints.", metric: "4x Speed" },
+    { icon: "🏆", title: "Awarded Excellence", desc: "Led technical delivery of AT&T's high-traffic BYOD portal integration, winning Accenture's Excellence Award.", metric: "Accenture" },
   ];
 
   return (

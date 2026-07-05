@@ -17,15 +17,15 @@ const Contact = () => {
 
   const fields = [
     { label: "Your Name", name: "name", type: "text", placeholder: "What is your name?" },
-    { label: "Your Email", name: "email", type: "email", placeholder: "Email address?" },
+    { label: "Contact Email", name: "email", type: "email", placeholder: "email@address.com" },
     { label: "Message", name: "message", type: "textarea", placeholder: "What would you like to say?" }
   ];
 
   const contactInfo = [
-    { icon: "📧", title: "Email", value: "p.baslass@gmail.com", href: "mailto:p.baslass@gmail.com" },
-    { icon: "📍", title: "Location", value: "Chennai, India" },
+    { icon: "🌍", title: "Timezones", value: "GMT / BST / CET Compatible" },
+    { icon: "📍", title: "Location", value: "Chennai, India (Remote Available)" },
     { icon: "💼", title: "LinkedIn", value: "Connect on LinkedIn", href: "https://www.linkedin.com/in/baswanth-papisetty-91340b9a/" },
-    { icon: "🐙", title: "GitHub", value: "View Repositories", href: "https://github.com/bashu241997" },
+    { icon: "📧", title: "Email", value: "p.baslass@gmail.com", href: "mailto:p.baslass@gmail.com" },
   ];
 
   return (
@@ -80,6 +80,11 @@ const Contact = () => {
                 >
                   {loading ? "Sending..." : "Send Message"}
                 </button>
+                
+                {/* GDPR and professional note */}
+                <p className="text-[10px] text-gray-500 leading-relaxed mt-2">
+                  * Secure, GDPR-compliant communication. Your details are processed solely to respond to this inquiry.
+                </p>
               </form>
             </div>
           </div>
